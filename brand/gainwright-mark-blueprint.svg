@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Gainwright mark, blueprint</title>
+  <rect width="64" height="64" fill="#0b2352"/>
+  <rect x="8" y="8" width="48" height="12" fill="#eaf1ff"/>
+  <rect x="8" y="8" width="12" height="48" fill="#eaf1ff"/>
+  <rect x="8" y="44" width="48" height="12" fill="#eaf1ff"/>
+  <rect x="30" y="30" width="26" height="12" fill="#7cd0ff"/>
+  <rect x="44" y="30" width="12" height="26" fill="#7cd0ff"/>
+</svg>

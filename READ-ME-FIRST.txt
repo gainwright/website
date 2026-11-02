@@ -1,0 +1,80 @@
+GAINWRIGHT.AI  ·  website and guide for review  ·  2 November 2026
+
+WHAT IS IN THIS FOLDER
+
+  Gainwright-website.html
+      The full website in one file. Images, video, 3D model and scripts are all
+      embedded, so it works without hosting. Double-click it and it opens in your
+      browser (Chrome, Safari, Edge or Firefox). It is 3.5 MB.
+      On a phone: save the file, then open it with Chrome or Safari. If WhatsApp
+      shows it as a document, tap it, choose "Open with" and pick a browser.
+      The only thing it fetches from the internet is the typeface (Google Fonts).
+      Offline it still works, in a fallback font.
+
+  Gainwright-Guide-01-The-owners-guide.pdf
+      Guide 01, "The owner's guide to AI that earns its keep", 11 pages A4.
+      This is the free guide the website offers in section 07. Please read it
+      as a prospect would.
+
+  brand/
+      The mark, the blueprint mark, the lockup, the favicon, and the dotted
+      wordmark in dark and light versions.
+
+HOW TO REVIEW THE WEBSITE
+
+  The page is deliberately short on first read. Every section has a fold
+  marked "Open" with the detail behind it. The button at the top right,
+  "Show all detail", opens every fold at once so you can read the whole page.
+  The half-filled circle button next to it switches to the blueprint (dark) version.
+  Section 01 has a calculator. Move the sliders and check the figures feel
+  right to you; the maths is hours a week x 48 weeks x rate.
+  Section 02 has the eight-question scorecard. Answer it and check the jobs
+  it names make sense for the answers given.
+  The forms (audit application, guide request, buy Ledgerwright) confirm
+  on the page but do not send anywhere yet. That is wired up at launch.
+
+THINGS THE PAGE SAYS THAT NEED YOUR SIGN-OFF
+
+  These are stated on the page as if they are settled. If any are wrong,
+  say so and they change before launch.
+
+  Ledgerwright (section 03)
+    - The feature list, item by item.
+    - "£4,999 once." Is that ex or inc VAT? The page does not say yet.
+    - "Ninety days of install support."
+    - "Installed and reconciling within thirty days, or we keep working
+      with you until it is, at no extra charge."
+    - "Year two onwards £0" (no subscription, no renewal fee).
+
+  The audit (section 02)
+    - "Twenty audits a month." Twenty installs a month.
+    - The audit is free.
+    - "If we cannot find at least ten hours a month worth saving, we tell
+      you, and the report is still yours."
+    - "We reply within three working days."
+
+  Fitted work (section 04)
+    - The six example jobs and the typical timescales given for each.
+    - That we build into Xero, the inbox, the CRM and existing systems,
+      rather than replacing them.
+
+  General
+    - hello@gainwright.ai as the contact address.
+    - The LinkedIn link in the footer (currently points at linkedin.com
+      until there is a company page).
+    - Every statistic has its source in the fold under section 01
+      (American Express SME Barometer July 2026, Xero UK, British Chambers
+      of Commerce, Enterprise Nation). Check you are happy quoting them.
+
+THE GUIDE
+
+    - Ten jobs, what each costs now, what fitted looks like, how long it
+      takes. Check the technical descriptions are how you would describe
+      the work, and that nothing promises something we would not build.
+    - No names appear in the guide or on the website. That is deliberate
+      for now and can change.
+
+WHAT HAPPENS AFTER YOUR REVIEW
+
+  Changes are made, the file is rebuilt, and the site goes up at
+  gainwright.ai with the forms connected.

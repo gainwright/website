@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 64" width="420" height="64">
+  <title>Gainwright lockup</title>
+  <rect x="8" y="8" width="48" height="12" fill="#1d2124"/>
+  <rect x="8" y="8" width="12" height="48" fill="#1d2124"/>
+  <rect x="8" y="44" width="48" height="12" fill="#1d2124"/>
+  <rect x="30" y="30" width="26" height="12" fill="#1f4fd1"/>
+  <rect x="44" y="30" width="12" height="26" fill="#1f4fd1"/>
+  <text x="78" y="46" font-family="Archivo, 'Archivo Variable', Helvetica, Arial, sans-serif" font-weight="560" font-size="40" letter-spacing="-1.8" fill="#1d2124">gainwright<tspan fill="#1f4fd1">.</tspan></text>
+</svg>
