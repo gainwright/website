@@ -9,5 +9,9 @@ Single-file marketing site for gainwright.ai, plus the first guide and brand ass
 
 ## Hosting
 
-Pushes to `main` deploy to GitHub Pages via `.github/workflows/pages.yml`.
+Served by Coolify on the Hetzner box, same as donlabs.ai. Pushes to `main`
+trigger a redeploy through a GitHub webhook into Coolify (project "Gainwright",
+app "gainwright-website", static build pack). DNS and TLS termination are on
+Cloudflare, proxied, with SSL set to Full (strict); the box holds its own
+Let's Encrypt certificates.
 The forms on the page confirm locally but are not yet wired to send anywhere.
