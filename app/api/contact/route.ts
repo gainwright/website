@@ -113,8 +113,6 @@ function limited(address: string): boolean {
 }
 
 export async function POST(req: Request) {
-  if (limited(clientAddress(req))) return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
-
   let body: Fields;
   try {
     const raw = await req.text();
@@ -125,6 +123,8 @@ export async function POST(req: Request) {
   }
   const mail = body && typeof body === "object" ? compose(body) : null;
   if (!mail) return NextResponse.json({ ok: false, error: "Invalid submission" }, { status: 400 });
+  // Counted only once a submission is valid, so junk requests cannot use up the allowance.
+  if (limited(clientAddress(req))) return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
 
   const { SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASS } = process.env;
   if (!SMTP_HOST || !SMTP_USER || !SMTP_PASS) {
