@@ -71,22 +71,49 @@ function compose(body: Fields): { subject: string; lines: string[]; replyTo: str
   return null;
 }
 
-// A light per-address limit so the form cannot be used to flood the inbox. Held in memory, so it resets on restart.
+// Limits so the form cannot be used to flood the inbox. Held in memory, so they reset on restart.
 const WINDOW_MS = 10 * 60 * 1000;
-const MAX_PER_WINDOW = 5;
+const MAX_PER_ADDRESS = 5; // per visitor address, per window
+const MAX_OVERALL = 40; // across all visitors, per window; holds even if addresses are faked
 const hits = new Map<string, number[]>();
-function limited(ip: string): boolean {
+let overall: number[] = [];
+
+/**
+ * The visitor's address. The site sits behind Cloudflare, which sets CF-Connecting-IP itself and
+ * overwrites any value the visitor sends. Failing that, use the last X-Forwarded-For entry, which is
+ * the one added by our own proxy; earlier entries are whatever the visitor chose to send.
+ */
+function clientAddress(req: Request): string {
+  const cf = req.headers.get("cf-connecting-ip");
+  if (cf) return cf.trim();
+  const forwarded = (req.headers.get("x-forwarded-for") || "").split(",").map((p) => p.trim()).filter(Boolean);
+  return forwarded[forwarded.length - 1] || "unknown";
+}
+
+function limited(address: string): boolean {
   const now = Date.now();
-  const recent = (hits.get(ip) || []).filter((t) => now - t < WINDOW_MS);
+  const fresh = (t: number) => now - t < WINDOW_MS;
+  overall = overall.filter(fresh);
+  if (hits.size > 2000) {
+    // Drop addresses with nothing recent, oldest first, so the table cannot grow without bound.
+    for (const [key, times] of hits) {
+      if (!times.some(fresh) || hits.size > 2000) hits.delete(key);
+      if (hits.size <= 1000) break;
+    }
+  }
+  const recent = (hits.get(address) || []).filter(fresh);
+  if (recent.length >= MAX_PER_ADDRESS || overall.length >= MAX_OVERALL) {
+    hits.set(address, recent);
+    return true;
+  }
   recent.push(now);
-  hits.set(ip, recent);
-  if (hits.size > 5000) hits.clear();
-  return recent.length > MAX_PER_WINDOW;
+  hits.set(address, recent);
+  overall.push(now);
+  return false;
 }
 
 export async function POST(req: Request) {
-  const ip = (req.headers.get("x-forwarded-for") || "").split(",")[0].trim() || "unknown";
-  if (limited(ip)) return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
+  if (limited(clientAddress(req))) return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
 
   let body: Fields;
   try {
