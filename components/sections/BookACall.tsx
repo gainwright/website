@@ -4,7 +4,7 @@ export default function BookACall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>07</b>Book a call
+            <b>08</b>Book a call
           </div>
           <div>
             <h2 className="display">

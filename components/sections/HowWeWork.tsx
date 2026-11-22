@@ -4,7 +4,7 @@ export default function HowWeWork() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>05</b>How we work
+            <b>06</b>How we work
           </div>
           <div>
             <h2 className="display">
