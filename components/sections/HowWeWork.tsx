@@ -8,10 +8,10 @@ export default function HowWeWork() {
           </div>
           <div>
             <h2 className="display">
-              Discovery call to fitted in about <span className="ac">eight weeks</span>.
+              First Sketch to fitted in about <span className="ac">eight weeks</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              A typical job, with a three day audit. One fixed price for the audit and one for the build, each agreed before we start.
+              A typical job, with a three day Blueprint. One fixed price for the Blueprint and one for the build, each agreed before we start.
             </p>
             <div className="timeline">
               <div className="tl-head">
@@ -32,7 +32,7 @@ export default function HowWeWork() {
                 <div className="t">
                   <div className="mono">01</div>
                   <div>
-                    <h3>Discovery and audit</h3>
+                    <h3>First Sketch and Blueprint</h3>
                     <p>A free call, then days in the business and a written report.</p>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ export default function HowWeWork() {
                   <div className="mono">02</div>
                   <div>
                     <h3>Decide</h3>
-                    <p>One fixed price, in the report. Go ahead and part of the audit fee comes off it.</p>
+                    <p>One fixed price, in the report. Go ahead and part of the Blueprint fee comes off it.</p>
                   </div>
                 </div>
                 <div className="tl-track">

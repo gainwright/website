@@ -29,7 +29,7 @@ export default function Studio() {
                       <div className="mono">Don Demetrius</div>
                       <p>
                         <b>Founder and lead engineer.</b> Fifteen years of shipping software, leading engineering across games, fintech,
-                        e-commerce, blockchain and self-development products. Don runs every audit and builds what comes out of it.
+                        e-commerce, blockchain and self-development products. Don runs every Blueprint and builds what comes out of it.
                       </p>
                     </div>
                   </div>

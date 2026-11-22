@@ -97,8 +97,8 @@ export default function Hours() {
                 </div>
                 <p className="note">
                   Half is an assumption, not a promise. It counts only the hours. It does not count month end arriving a week earlier,
-                  invoices chased on time, or what a person does with the weeks they get back. The discovery call puts a rough figure on
-                  it in your own numbers, and the audit measures it properly.
+                  invoices chased on time, or what a person does with the weeks they get back. The First Sketch call puts a rough figure on
+                  it in your own numbers, and the Blueprint measures it properly.
                 </p>
                 <a className="btn" href="#apply" style={{ justifyContent: "center" }}>
                   Book a call <span className="arr">→</span>

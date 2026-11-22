@@ -4,32 +4,32 @@ export default function FirstCall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>02</b>Discovery · free
+            <b>02</b>First Sketch · free
           </div>
           <div>
             <h2 className="display">
-              Start with a 30 minute discovery <span className="ac">call</span>.
+              Start with the First <span className="ac">Sketch</span>.
             </h2>
             <div className="firstcall">
               <div>
                 <p className="lede">
-                  Free, and no forms to fill in first. One call, where you walk us through how the work gets done today.
+                  A free 30 minute call, with no forms to fill in first. You walk us through how the work gets done today.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
                   We're listening for one thing: a job your team does by hand that costs you real money every year. By the end of the call
-                  you'll have a rough figure for what it costs, in your own numbers.
+                  you'll have a rough figure for what it costs, in your own numbers. That is the first sketch.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
                   If we can't find a job costing you at least £20,000 a year, we'll say so on the call and you'll have lost 30 minutes.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
-                  If we do, the next step is the audit. We spend days inside the business, measure the work properly and come back with a
-                  written report and a fixed price to remove most of it. The audit is a fixed fee, and part of it comes off the build if
+                  If we do, the next step is the Blueprint, our audit. We spend days inside the business, measure the work properly and come back with a
+                  written report and a fixed price to remove most of it. The Blueprint is a fixed fee, and part of it comes off the build if
                   you go ahead.
                 </p>
                 <div style={{ marginTop: "28px" }}>
                   <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
-                    Book a discovery call <span className="arr">→</span>
+                    Book your First Sketch <span className="arr">→</span>
                   </a>
                 </div>
               </div>
