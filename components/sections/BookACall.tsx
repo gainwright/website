@@ -4,7 +4,7 @@ export default function BookACall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>08</b>Book a call
+            <b>07</b>Book a call
           </div>
           <div>
             <h2 className="display">
@@ -132,8 +132,7 @@ export default function BookACall() {
                 </div>
                 <div className="foot">
                   <p>
-                    We read every request ourselves. We do not sell or share your details and we do not add you to a list unless you ask for
-                    the guide.
+                    We read every request ourselves. We do not sell or share your details and we do not add you to a list.
                   </p>
                   <button className="btn" type="submit">
                     Send <span className="arr">→</span>

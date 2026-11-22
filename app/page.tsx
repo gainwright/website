@@ -8,7 +8,6 @@ import Audit from "@/components/sections/Audit";
 import FittedWork from "@/components/sections/FittedWork";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Studio from "@/components/sections/Studio";
-import Guide from "@/components/sections/Guide";
 import BookACall from "@/components/sections/BookACall";
 
 export default function Page() {
@@ -23,7 +22,6 @@ export default function Page() {
         <FittedWork />
         <HowWeWork />
         <Studio />
-        <Guide />
         <BookACall />
       </main>
       <Footer />

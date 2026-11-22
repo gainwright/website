@@ -8,7 +8,7 @@ export default function FirstCall() {
           </div>
           <div>
             <h2 className="display">
-              Start with a 25 minute discovery <span className="ac">call</span>.
+              Start with a 30 minute discovery <span className="ac">call</span>.
             </h2>
             <div className="firstcall">
               <div>
@@ -20,7 +20,7 @@ export default function FirstCall() {
                   you'll have a rough figure for what it costs, in your own numbers.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
-                  If we can't find a job costing you at least £20,000 a year, we'll say so on the call and you'll have lost 25 minutes.
+                  If we can't find a job costing you at least £20,000 a year, we'll say so on the call and you'll have lost 30 minutes.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
                   If we do, the next step is the audit. We spend days inside the business, measure the work properly and come back with a

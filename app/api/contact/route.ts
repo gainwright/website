@@ -55,9 +55,6 @@ function compose(body: Fields): { subject: string; lines: string[]; replyTo: str
       ],
     };
   }
-  if (body.type === "guide") {
-    return { subject: `Guide request: ${email}`, replyTo: email, lines: [`${email} asked for Guide 01.`] };
-  }
   if (body.type === "scorecard") {
     const jobs = Array.isArray(body.jobs) ? body.jobs.slice(0, 8).map((j) => line(j)).filter(Boolean) : [];
     const score = Number.isInteger(body.score) ? (body.score as number) : jobs.length;

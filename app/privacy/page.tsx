@@ -30,7 +30,7 @@ export default function Privacy() {
 
       <h2>What we collect when you contact us</h2>
       <p>
-        The site has three forms: the call request, the scorecard and the guide request. Each sends us an email containing what you typed,
+        The site has two forms: the call request and the scorecard. Each sends us an email containing what you typed,
         which is typically your name, email address, business, and anything you tell us about it. We use it to reply, to send what you
         asked for and to arrange a call. We do not add you to a mailing list unless you ask us to.
       </p>
