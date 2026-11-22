@@ -32,7 +32,7 @@ export default function Clients() {
                   <img src="/images/luke-heaver.jpg" alt="Luke Heaver" width="480" height="480" />
                   <div>
                     <b>Luke Heaver</b>
-                    <span className="mono">Audit and deployment of his own business system</span>
+                    <span className="mono">Exact Architectural Glazing · audit and deployment of his own business system</span>
                   </div>
                 </figcaption>
               </figure>
