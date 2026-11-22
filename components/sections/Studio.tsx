@@ -4,7 +4,7 @@ export default function Studio() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>06</b>The studio
+            <b>07</b>The studio
           </div>
           <div>
             <h2 className="display">
