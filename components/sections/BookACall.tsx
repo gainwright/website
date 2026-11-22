@@ -32,7 +32,7 @@ export default function BookACall() {
                 <div className="mono">
                   <b>Free</b>30 minutes · video call
                 </div>
-                <a className="btn ac" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                <a className="btn ac" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
                   Book your First Sketch <span className="arr">→</span>
                 </a>
                 <div className="spec">

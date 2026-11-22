@@ -100,7 +100,7 @@ export default function Hours() {
                   invoices chased on time, or what a person does with the weeks they get back. The First Sketch call puts a rough figure on
                   it in your own numbers, and the Blueprint measures it properly.
                 </p>
-                <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener" style={{ justifyContent: "center" }}>
+                <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener" style={{ justifyContent: "center" }}>
                   Book your First Sketch <span className="arr">→</span>
                 </a>
               </div>

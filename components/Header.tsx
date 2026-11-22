@@ -18,7 +18,7 @@ export default function Header() {
         <nav className="nav" aria-label="Primary">
           <a href="#hours">The hours</a> <a href="#first-call">First Sketch</a> <a href="#audit">The Blueprint</a>{" "}
           <a href="#fitted">What we build</a> <a href="#how">How we work</a> <a href="#apply">Contact</a>{" "}
-          <a href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener" className="only-menu">
+          <a href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener" className="only-menu">
             Book your First Sketch →
           </a>
         </nav>
@@ -38,7 +38,7 @@ export default function Header() {
               <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" />
             </svg>
           </button>{" "}
-          <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+          <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
             Book your First Sketch
           </a>{" "}
           <button className="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">

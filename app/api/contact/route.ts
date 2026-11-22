@@ -27,8 +27,43 @@ const INTERESTS: Record<string, string> = {
   claude: "Claude set up for our business",
 };
 
+const BOOKING_URL = "https://calendly.com/gainwright/first-sketch";
+const REPLY_FROM = process.env.CONTACT_REPLY_FROM || "Gainwright <hello@gainwright.ai>";
+const REPLY_TO = process.env.CONTACT_REPLY_TO || "hello@gainwright.ai";
+
+/**
+ * The eight scorecard jobs, as written in components/sections/FirstCall.tsx. The reply to a visitor
+ * only ever contains jobs from this list, so the form cannot be used to send someone arbitrary text.
+ */
+const SCORECARD_JOBS = [
+  "Bank lines reconciled in your accounts every morning",
+  "A fitted connector between the two systems",
+  "An inbox agent that turns emails into tasks with owners",
+  "A quote drafter working from the last fifty you won",
+  "A weekly exceptions report, before the customer calls",
+  "A management report that writes itself from your accounts and your CRM",
+  "A credit-control agent that chases, politely, on schedule",
+  "Your written way of working, loaded into Claude",
+];
+
+type Mail = { subject: string; lines: string[]; replyTo: string; visitor?: { to: string; subject: string; lines: string[] } };
+
+/** The email a visitor gets back after asking for their scorecard list. */
+function scorecardReply(jobs: string[]): { subject: string; lines: string[] } {
+  const opening = jobs.length
+    ? [`You ticked ${jobs.length} of 8. Here is what we would fit for each:`, "", ...jobs.map((j, i) => `${i + 1}. ${j}`)]
+    : ["You ticked none of the eight, which means the business is already running tighter than most."];
+  const next = jobs.length
+    ? "The next step is the First Sketch, a free 30 minute call. You walk us through one of these jobs and leave with a rough figure for what it costs you a year."
+    : "If there is a job that eats the week and was not on the list, the First Sketch is a free 30 minute call. You walk us through it and leave with a rough figure for what it costs you a year.";
+  return {
+    subject: "Your list: the jobs AI should already be doing for you",
+    lines: [...opening, "", next, "", `Book a time: ${BOOKING_URL}`, "", "Or just reply to this email.", "", "Don Demetrius", "Gainwright", "gainwright.ai"],
+  };
+}
+
 /** Turns a form payload into an email, or returns null if it is not a valid submission. */
-function compose(body: Fields): { subject: string; lines: string[]; replyTo: string } | null {
+function compose(body: Fields): Mail | null {
   const email = line(body.email, 254);
   if (!isEmail(email)) return null;
 
@@ -56,12 +91,14 @@ function compose(body: Fields): { subject: string; lines: string[]; replyTo: str
     };
   }
   if (body.type === "scorecard") {
-    const jobs = Array.isArray(body.jobs) ? body.jobs.slice(0, 8).map((j) => line(j)).filter(Boolean) : [];
-    const score = Number.isInteger(body.score) ? (body.score as number) : jobs.length;
+    const sent = Array.isArray(body.jobs) ? body.jobs.slice(0, 8).map((j) => line(j)) : [];
+    const jobs = SCORECARD_JOBS.filter((j) => sent.includes(j));
+    const score = jobs.length;
     return {
       subject: `Scorecard: ${email}, ${score} of 8`,
       replyTo: email,
-      lines: [`${email} asked for their scorecard list.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
+      lines: [`${email} asked for their scorecard list, and has been sent it.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
+      visitor: { to: email, ...scorecardReply(jobs) },
     };
   }
   return null;
@@ -137,6 +174,11 @@ export async function POST(req: Request) {
     const port = Number(SMTP_PORT) || 465;
     const transport = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } });
     await transport.sendMail({ from: FROM, to: TO, replyTo: mail.replyTo, subject: mail.subject, text: mail.lines.join("\n") });
+    if (mail.visitor) {
+      // The visitor was promised their list by email. If this second send fails, say so, so the page shows its fallback message.
+      const v = mail.visitor;
+      await transport.sendMail({ from: REPLY_FROM, to: v.to, replyTo: REPLY_TO, subject: v.subject, text: v.lines.join("\n") });
+    }
     return NextResponse.json({ ok: true, delivered: true });
   } catch (err) {
     console.error("[contact] send failed:", err);
