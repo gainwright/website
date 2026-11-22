@@ -36,7 +36,8 @@ export default function Privacy() {
       </p>
       <p>
         To stop the forms being abused, the server keeps a count of recent submissions against your IP address. That count is held in
-        memory for ten minutes and is never written to disk.
+        memory for ten minutes and is never written to disk. When the scorecard emails you your list, the server also remembers the
+        address it sent to for a day, in memory only, so that nobody can use the form to email you repeatedly.
       </p>
       <p>
         Emails are stored by our mail provider. Call bookings are handled by Calendly, which has its own privacy policy.
