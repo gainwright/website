@@ -52,7 +52,7 @@ export default function FirstCall() {
                   </li>
                 </ol>
                 <div style={{ marginTop: "28px" }}>
-                  <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                  <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
                     Book your First Sketch <span className="arr">→</span>
                   </a>
                 </div>
@@ -180,7 +180,7 @@ export default function FirstCall() {
                   <p className="mono" id="scoreDone" hidden />
                   <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
                     Or skip the email and{" "}
-                    <a className="ulink" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                    <a className="ulink" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
                       book your First Sketch
                     </a>
                     .
