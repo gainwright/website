@@ -56,23 +56,40 @@ type Mail = { subject: string; lines: string[]; replyTo: string; visitor?: { to:
 // Limits on the reply sent to visitors, separate from and tighter than the limits on notifying us, so
 // the form cannot be used to mail a stranger repeatedly. Held in memory, so they reset on restart.
 const REPLY_WINDOW_MS = 24 * 60 * 60 * 1000;
-const MAX_REPLIES_PER_RECIPIENT = 2; // per address, per day
-const MAX_REPLIES_OVERALL = 60; // across all addresses, per day
+const MAX_REPLIES_PER_RECIPIENT = 2; // per mailbox, per day
+const MAX_REPLIES_PER_SENDER = 3; // per visitor network address, per day, so one visitor cannot use up the overall allowance
+const MAX_REPLIES_OVERALL = 60; // across everyone, per day
 const replies = new Map<string, number[]>();
 
-/** Records and allows a reply to this address, or returns false if it has had its share. */
-function mayReply(address: string): boolean {
+/**
+ * The mailbox an address delivers to, as far as we can tell, so that variants of one address share a
+ * limit: case is ignored, a "+tag" is dropped, and Gmail's dots and its googlemail.com name are folded.
+ */
+function mailbox(address: string): string {
+  const at = address.lastIndexOf("@");
+  let local = address.slice(0, at).toLowerCase().split("+")[0];
+  let domain = address.slice(at + 1).toLowerCase();
+  if (domain === "googlemail.com") domain = "gmail.com";
+  if (domain === "gmail.com") local = local.replace(/\./g, "");
+  return `${local}@${domain}`;
+}
+
+/** Records and allows a reply to this address from this sender, or returns false if either has had its share. */
+function mayReply(address: string, sender: string): boolean {
   const now = Date.now();
   const fresh = (t: number) => now - t < REPLY_WINDOW_MS;
   let total = 0;
   for (const [key, times] of replies) {
     const kept = times.filter(fresh);
-    if (kept.length) { replies.set(key, kept); total += kept.length; } else replies.delete(key);
+    if (kept.length) { replies.set(key, kept); if (key.startsWith("to:")) total += kept.length; } else replies.delete(key);
   }
-  const key = address.toLowerCase();
-  const mine = replies.get(key) || [];
-  if (mine.length >= MAX_REPLIES_PER_RECIPIENT || total >= MAX_REPLIES_OVERALL) return false;
-  replies.set(key, [...mine, now]);
+  const toKey = `to:${mailbox(address)}`;
+  const fromKey = `from:${sender}`;
+  const to = replies.get(toKey) || [];
+  const from = replies.get(fromKey) || [];
+  if (to.length >= MAX_REPLIES_PER_RECIPIENT || from.length >= MAX_REPLIES_PER_SENDER || total >= MAX_REPLIES_OVERALL) return false;
+  replies.set(toKey, [...to, now]);
+  replies.set(fromKey, [...from, now]);
   return true;
 }
 
@@ -125,7 +142,7 @@ function compose(body: Fields): Mail | null {
     return {
       subject: `Scorecard: ${email}, ${score} of 8`,
       replyTo: email,
-      lines: [`${email} asked for their scorecard list. They are emailed it automatically, at most twice a day per address.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
+      lines: [`${email} asked for their scorecard list.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
       visitor: { to: email, ...scorecardReply(jobs) },
     };
   }
@@ -201,10 +218,13 @@ export async function POST(req: Request) {
   try {
     const port = Number(SMTP_PORT) || 465;
     const transport = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } });
-    await transport.sendMail({ from: FROM, to: TO, replyTo: mail.replyTo, subject: mail.subject, text: mail.lines.join("\n") });
-    if (mail.visitor && mayReply(mail.visitor.to)) {
+    // Decided before we are notified, so our copy says whether the visitor was sent their list or needs it sending by hand.
+    const reply = mail.visitor && mayReply(mail.visitor.to, clientAddress(req)) ? mail.visitor : null;
+    const note = !mail.visitor ? [] : ["", reply ? "They have been emailed their list automatically." : "NOT emailed their list: the daily limit for automatic replies was reached. Reply to this email to send it by hand."];
+    await transport.sendMail({ from: FROM, to: TO, replyTo: mail.replyTo, subject: mail.subject, text: [...mail.lines, ...note].join("\n") });
+    if (reply) {
       // The visitor was promised their list by email. If this second send fails, say so, so the page shows its fallback message.
-      const v = mail.visitor;
+      const v = reply;
       // The recipient is passed as a single structured address, so it can never be split into several.
       await transport.sendMail({ from: REPLY_FROM, to: { name: "", address: v.to }, replyTo: REPLY_TO, subject: v.subject, text: v.lines.join("\n") });
     }
