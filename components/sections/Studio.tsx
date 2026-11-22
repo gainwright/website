@@ -16,7 +16,13 @@ export default function Studio() {
                   A consultant tells you what the ship needs. An agency builds a boat and leaves. A wright fits the thing into the structure
                   you already have, and stays until it holds.
                 </p>
-                <div className="people team" style={{ marginTop: "28px" }}>
+                <div className="mono" style={{ marginTop: "36px" }}>
+                  <b>The humans behind the AI</b>Real people · real photos
+                </div>
+                <p className="lede" style={{ marginTop: "10px" }}>
+                  You don't hire an agency and get passed down the line. You work with the engineers who do the build.
+                </p>
+                <div className="people team" style={{ marginTop: "20px" }}>
                   <div className="person">
                     <img src="/images/don-demetrius.jpg" alt="Don Demetrius" width="800" height="960" />
                     <div>
