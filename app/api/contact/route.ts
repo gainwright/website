@@ -21,8 +21,8 @@ function isEmail(v: string): boolean {
 }
 
 const INTERESTS: Record<string, string> = {
-  call: "A discovery call",
-  audit: "An audit",
+  call: "A First Sketch call",
+  audit: "The Blueprint",
   fitted: "A custom build",
   claude: "Claude set up for our business",
 };

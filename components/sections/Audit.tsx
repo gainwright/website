@@ -4,7 +4,7 @@ export default function Audit() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>03</b>The audit
+            <b>03</b>The Blueprint
           </div>
           <div>
             <h2 className="display">
@@ -17,12 +17,12 @@ export default function Audit() {
                     <b>We don't run on vibes. We run on blueprints.</b>
                   </p>
                   <p className="lede">
-                    The audit is the blueprint. It is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
+                    The Blueprint is our audit. It is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
                     and measure them. You get a written report that says where the hours go, what each job costs you, and what we would
                     build to take it away.
                   </p>
                   <p className="lede">
-                    The report is yours whatever you decide. Ask us to build it and part of the audit fee comes off the price. Or take
+                    The report is yours whatever you decide. Ask us to build it and part of the Blueprint fee comes off the price. Or take
                     the report and do it yourselves.
                   </p>
                 </div>
@@ -51,7 +51,7 @@ export default function Audit() {
                 </div>
                 <details className="fold" style={{ marginTop: "0" }}>
                   <summary>
-                    <span className="k">Everything the audit covers</span>
+                    <span className="k">Everything the Blueprint covers</span>
                     <span className="hint" />
                   </summary>
                   <div className="inner">
@@ -102,9 +102,9 @@ export default function Audit() {
                   </div>
                 </details>
               </div>
-              <aside className="price-card" aria-label="The audit: how it is sized">
+              <aside className="price-card" aria-label="The Blueprint: how it is sized">
                 <div className="mono">
-                  <b>How it is sized</b>The audit
+                  <b>How it is sized</b>The Blueprint
                 </div>
                 <div className="spec">
                   <div className="row">
@@ -113,7 +113,7 @@ export default function Audit() {
                   </div>
                   <div className="row">
                     <div className="mono">Price</div>
-                    <p>One fixed fee, agreed on the discovery call before anything starts.</p>
+                    <p>One fixed fee, agreed on the First Sketch call before anything starts.</p>
                   </div>
                   <div className="row">
                     <div className="mono">Credited</div>
@@ -126,11 +126,11 @@ export default function Audit() {
                 </div>
                 <div className="ctas">
                   <a className="btn ac" href="#apply">
-                    Book a discovery call
+                    Book your First Sketch
                   </a>
                 </div>
                 <p className="fine">
-                  Every audit starts with the free discovery call. That is where we agree which teams to cover and which size fits.
+                  Every Blueprint starts with the First Sketch, a free 30 minute call. That is where we agree which teams to cover and which size fits.
                 </p>
               </aside>
             </div>

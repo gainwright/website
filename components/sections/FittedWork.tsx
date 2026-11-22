@@ -11,7 +11,7 @@ export default function FittedWork() {
               Built to order. Fitted to what you <span className="ac">already run</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              Two kinds of work follow an audit. Both are fitted into your accounts, the inbox, the CRM and the sheets the business already lives
+              Two kinds of work follow a Blueprint. Both are fitted into your accounts, the inbox, the CRM and the sheets the business already lives
               in.
             </p>
             <div className="spec" style={{ marginTop: "28px" }}>
@@ -162,7 +162,7 @@ export default function FittedWork() {
             </div>
             <div className="works-foot">
               <p className="mono src" style={{ margin: "0" }}>
-                Examples, not a menu. Every job is one fixed price, quoted in the audit report, with ninety days of support.
+                Examples, not a menu. Every job is one fixed price, quoted in the Blueprint report, with ninety days of support.
               </p>
               <a className="btn" href="#apply" data-intent="fitted">
                 Ask about a build <span className="arr">→</span>

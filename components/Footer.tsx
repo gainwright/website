@@ -14,7 +14,7 @@ export default function Footer() {
               </svg>
             </a>
             <p className="desc">
-              AI fitted into established businesses: an audit of where the hours go, then custom software and Claude set up safely, built into the systems you already run.
+              AI fitted into established businesses: the Blueprint, an audit of where the hours go, then custom software and Claude set up safely, built into the systems you already run.
             </p>
           </div>
           <div>
@@ -24,10 +24,10 @@ export default function Footer() {
                 <a href="#hours">The hours</a>
               </li>
               <li>
-                <a href="#first-call">Discovery</a>
+                <a href="#first-call">First Sketch</a>
               </li>
               <li>
-                <a href="#audit">The audit</a>
+                <a href="#audit">The Blueprint</a>
               </li>
               <li>
                 <a href="#fitted">What we build</a>

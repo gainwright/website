@@ -13,7 +13,7 @@ export default function BookACall() {
             <div className="inner">
               <div className="contact-side">
                 <p className="lede">
-                  Pick a time for the free discovery call now. Or tell us what you run, roughly what it turns over and where the time
+                  Pick a time for the First Sketch now. It is a free 30 minute call. Or tell us what you run, roughly what it turns over and where the time
                   disappears, and we reply within three working days.
                 </p>
                 <div>
@@ -78,10 +78,10 @@ export default function BookACall() {
                   <label id="lblInt">What are you here for?</label>
                   <div className="chips" role="group" aria-labelledby="lblInt" data-name="interest">
                     <button type="button" aria-pressed="false" data-val="call">
-                      A discovery call
+                      A First Sketch call
                     </button>
                     <button type="button" aria-pressed="false" data-val="audit">
-                      An audit
+                      The Blueprint
                     </button>
                     <button type="button" aria-pressed="false" data-val="fitted">
                       A custom build
