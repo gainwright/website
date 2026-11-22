@@ -5,8 +5,8 @@ Marketing site for gainwright.ai: a Next.js (App Router, TypeScript) app, plus t
 - `app/page.tsx` puts the page together from the section components in `components/sections/` (one file per numbered section), with `components/Header.tsx` and `components/Footer.tsx`. Edit copy there.
 - `app/globals.css` holds all the styles.
 - `lib/site.js` is the page's interactive behaviour (theme, menu, calculator, scorecard, forms, ledger demo, 3D model), carried over from the original single-file site. `components/SiteInteractions.tsx` starts it.
-- `app/api/contact/route.ts` receives the three forms (book a call, guide request, scorecard) and emails each submission to `hello@gainwright.ai`.
-- `public/` holds the images, the workshop film, `Gainwright-Guide-01-The-owners-guide.pdf` (Guide 01, offered in section 07) and `brand/` (mark, blueprint mark, lockup, favicon, dotted wordmark).
+- `app/api/contact/route.ts` receives the two forms (the First Sketch request and the scorecard) and emails each submission to `hello@gainwright.ai`.
+- `public/` holds the images, the workshop film, `brand/` (mark, blueprint mark, lockup, favicon, dotted wordmark).
 - `READ-ME-FIRST.txt` is the review note from before launch.
 
 ## Running it locally

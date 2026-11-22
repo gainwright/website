@@ -59,42 +59,15 @@ export default function FirstCall() {
               </div>
               <div className="card scorecard" id="scorecard">
                 <div className="sc-side">
-                <div className="mono">
-                  <b>Three minutes</b>Not ready for a call? Start here.
-                </div>
-                <h3 className="display" style={{ margin: "0 0 8px" }}>
-                  Which jobs should AI already be doing for you?
-                </h3>
-                <p style={{ color: "var(--fg-soft)", fontSize: "15px", marginBottom: "10px" }}>
-                  Tick what is true this month and we will name the jobs, and what we would fit for each.
-                </p>
-                <div className="result">
-                  <div className="bar">
-                    <i id="scoreBar" />
+                  <div className="mono">
+                    <b>Three minutes</b>Not ready for a call? Start here.
                   </div>
-                  <div className="verdict" id="verdict">
-                    Answer the eight and we'll tell you what it suggests.
-                    <small id="verdictSub" />
-                  </div>
-                  <ol className="jobs" id="jobList" hidden />
-                  <form className="inline-form" id="scoreForm" hidden>
-                    <label className="sr" htmlFor="scoreEmail">
-                      Your email
-                    </label>{" "}
-                    <input id="scoreEmail" type="email" placeholder="you@yourbusiness.co.uk" autoComplete="email" required />{" "}
-                    <button className="btn" type="submit">
-                      Email me my list
-                    </button>
-                  </form>
-                  <p className="mono" id="scoreDone" hidden />
-                  <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
-                    Or skip the email and{" "}
-                    <a className="ulink" href="#apply">
-                      book your First Sketch
-                    </a>
-                    .
+                  <h3 className="display" style={{ margin: "0 0 8px" }}>
+                    Which jobs should AI already be doing for you?
+                  </h3>
+                  <p style={{ color: "var(--fg-soft)", fontSize: "15px", marginBottom: "10px" }}>
+                    Tick what is true this month and we will name the jobs, and what we would fit for each.
                   </p>
-                </div>
                 </div>
                 <div id="qs">
                   <div className="q" data-job="Bank lines reconciled in your accounts every morning">
@@ -185,6 +158,33 @@ export default function FirstCall() {
                       </button>
                     </div>
                   </div>
+                </div>
+                <div className="result">
+                  <div className="bar">
+                    <i id="scoreBar" />
+                  </div>
+                  <div className="verdict" id="verdict">
+                    Answer the eight and we'll tell you what it suggests.
+                    <small id="verdictSub" />
+                  </div>
+                  <ol className="jobs" id="jobList" hidden />
+                  <form className="inline-form" id="scoreForm" hidden>
+                    <label className="sr" htmlFor="scoreEmail">
+                      Your email
+                    </label>{" "}
+                    <input id="scoreEmail" type="email" placeholder="you@yourbusiness.co.uk" autoComplete="email" required />{" "}
+                    <button className="btn" type="submit">
+                      Email me my list
+                    </button>
+                  </form>
+                  <p className="mono" id="scoreDone" hidden />
+                  <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
+                    Or skip the email and{" "}
+                    <a className="ulink" href="#apply">
+                      book your First Sketch
+                    </a>
+                    .
+                  </p>
                 </div>
               </div>
             </div>

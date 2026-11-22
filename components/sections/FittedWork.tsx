@@ -11,7 +11,7 @@ export default function FittedWork() {
               Built to order. Fitted to what you <span className="ac">already run</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              Three things follow a Blueprint. All of it is fitted into your accounts, the inbox, the CRM and the sheets the business already lives
+              Three things follow a Blueprint. The first two are fitted into your accounts, the inbox, the CRM and the sheets the business already lives
               in.
             </p>
             <div className="offers">

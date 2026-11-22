@@ -51,115 +51,113 @@ export default function BookACall() {
             <div className="mono form-label">
               <b>Or</b>Tell us about the business
             </div>
-            <div>
-              <form className="form" id="applyForm" noValidate>
-                <div className="f4">
-                  <div className="field">
-                    <label htmlFor="fName">Your name</label>
-                    <input id="fName" name="name" type="text" autoComplete="name" placeholder="Karen Holm" required />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="fEmail">Email</label>
-                    <input id="fEmail" name="email" type="email" autoComplete="email" placeholder="karen@holmandco.co.uk" required />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="fCo">Business</label>
-                    <input id="fCo" name="company" type="text" autoComplete="organization" placeholder="Holm &amp; Co Ltd" required />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="fWeb">Website (optional)</label>
-                    <input id="fWeb" name="website" type="url" autoComplete="url" placeholder="holmandco.co.uk" />
-                  </div>
+            <form className="form" id="applyForm" noValidate>
+              <div className="f4">
+                <div className="field">
+                  <label htmlFor="fName">Your name</label>
+                  <input id="fName" name="name" type="text" autoComplete="name" placeholder="Karen Holm" required />
                 </div>
                 <div className="field">
-                  <label id="lblTurn">Turnover</label>
-                  <div className="chips" role="group" aria-labelledby="lblTurn" data-name="turnover">
-                    <button type="button" aria-pressed="false">
-                      Under £1m
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      £1m to £3m
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      £3m to £5m
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      £5m to £10m
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      Over £10m
-                    </button>
-                  </div>
+                  <label htmlFor="fEmail">Email</label>
+                  <input id="fEmail" name="email" type="email" autoComplete="email" placeholder="karen@holmandco.co.uk" required />
                 </div>
                 <div className="field">
-                  <label id="lblInt">What are you here for?</label>
-                  <div className="chips" role="group" aria-labelledby="lblInt" data-name="interest">
-                    <button type="button" aria-pressed="false" data-val="call">
-                      A First Sketch call
-                    </button>
-                    <button type="button" aria-pressed="false" data-val="audit">
-                      The Blueprint
-                    </button>
-                    <button type="button" aria-pressed="false" data-val="fitted">
-                      A custom build
-                    </button>
-                    <button type="button" aria-pressed="false" data-val="claude">
-                      Claude set up for our business
-                    </button>
-                  </div>
+                  <label htmlFor="fCo">Business</label>
+                  <input id="fCo" name="company" type="text" autoComplete="organization" placeholder="Holm &amp; Co Ltd" required />
                 </div>
                 <div className="field">
-                  <label id="lblBooks">What runs your books?</label>
-                  <div className="chips" role="group" aria-labelledby="lblBooks" data-name="books">
-                    <button type="button" aria-pressed="false">
-                      Xero
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      QuickBooks
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      Sage
-                    </button>
-                    <button type="button" aria-pressed="false">
-                      Something else
-                    </button>
-                  </div>
+                  <label htmlFor="fWeb">Website (optional)</label>
+                  <input id="fWeb" name="website" type="url" autoComplete="url" placeholder="holmandco.co.uk" />
                 </div>
-                <div className="field">
-                  <label htmlFor="fHours">Where do the hours go?</label>
-                  <textarea
-                    id="fHours"
-                    name="hours"
-                    placeholder="Month end, chasing invoices, re-keying orders into the accounts, writing the same quote again…"
-                  />
-                </div>
-                <div className="f2">
-                  <div className="field">
-                    <label htmlFor="fWhen">When would you like to start?</label>
-                    <input id="fWhen" name="when" type="text" placeholder="January" />
-                  </div>
-                  <div className="field">
-                    <label htmlFor="fHeard">How did you hear about us?</label>
-                    <input id="fHeard" name="heard" type="text" placeholder="LinkedIn, a friend, a search" />
-                  </div>
-                </div>
-                <div className="foot">
-                  <p>
-                    We read every request ourselves. We do not sell or share your details and we do not add you to a list.
-                  </p>
-                  <button className="btn" type="submit">
-                    Send <span className="arr">→</span>
+              </div>
+              <div className="field">
+                <label id="lblTurn">Turnover</label>
+                <div className="chips" role="group" aria-labelledby="lblTurn" data-name="turnover">
+                  <button type="button" aria-pressed="false">
+                    Under £1m
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    £1m to £3m
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    £3m to £5m
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    £5m to £10m
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    Over £10m
                   </button>
                 </div>
-                <div className="done" id="applyDone" hidden>
-                  <div className="mono ok">Received</div>
-                  <div className="verdict">Thank you. We'll reply within three working days.</div>
-                  <p style={{ color: "var(--fg-soft)" }}>
-                    If it is quicker, email <span id="emailText2">hello@gainwright.ai</span> directly.
-                  </p>
+              </div>
+              <div className="field">
+                <label id="lblInt">What are you here for?</label>
+                <div className="chips" role="group" aria-labelledby="lblInt" data-name="interest">
+                  <button type="button" aria-pressed="false" data-val="call">
+                    A First Sketch call
+                  </button>
+                  <button type="button" aria-pressed="false" data-val="audit">
+                    The Blueprint
+                  </button>
+                  <button type="button" aria-pressed="false" data-val="fitted">
+                    A custom build
+                  </button>
+                  <button type="button" aria-pressed="false" data-val="claude">
+                    Claude set up for our business
+                  </button>
                 </div>
-              </form>
-            </div>
+              </div>
+              <div className="field">
+                <label id="lblBooks">What runs your books?</label>
+                <div className="chips" role="group" aria-labelledby="lblBooks" data-name="books">
+                  <button type="button" aria-pressed="false">
+                    Xero
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    QuickBooks
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    Sage
+                  </button>
+                  <button type="button" aria-pressed="false">
+                    Something else
+                  </button>
+                </div>
+              </div>
+              <div className="field">
+                <label htmlFor="fHours">Where do the hours go?</label>
+                <textarea
+                  id="fHours"
+                  name="hours"
+                  placeholder="Month end, chasing invoices, re-keying orders into the accounts, writing the same quote again…"
+                />
+              </div>
+              <div className="f2">
+                <div className="field">
+                  <label htmlFor="fWhen">When would you like to start?</label>
+                  <input id="fWhen" name="when" type="text" placeholder="January" />
+                </div>
+                <div className="field">
+                  <label htmlFor="fHeard">How did you hear about us?</label>
+                  <input id="fHeard" name="heard" type="text" placeholder="LinkedIn, a friend, a search" />
+                </div>
+              </div>
+              <div className="foot">
+                <p>
+                  We read every request ourselves. We do not sell or share your details and we do not add you to a list.
+                </p>
+                <button className="btn" type="submit">
+                  Send <span className="arr">→</span>
+                </button>
+              </div>
+              <div className="done" id="applyDone" hidden>
+                <div className="mono ok">Received</div>
+                <div className="verdict">Thank you. We'll reply within three working days.</div>
+                <p style={{ color: "var(--fg-soft)" }}>
+                  If it is quicker, email <span id="emailText2">hello@gainwright.ai</span> directly.
+                </p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
