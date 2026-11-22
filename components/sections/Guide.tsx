@@ -37,7 +37,7 @@ export default function Guide() {
                       <li>The ten jobs, in payback order, with the hours.</li>
                       <li>The five questions to ask anyone who says they "do AI".</li>
                       <li>What a written way of working is, and why it is the whole job.</li>
-                      <li>How we fitted Ledgerwright, step by step, including what went wrong.</li>
+                      <li>One job fitted step by step, including what went wrong.</li>
                       <li>A scorecard to fill in with a pen.</li>
                     </ul>
                   </div>

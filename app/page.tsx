@@ -4,7 +4,7 @@ import SiteInteractions from "@/components/SiteInteractions";
 import Hero from "@/components/sections/Hero";
 import Hours from "@/components/sections/Hours";
 import FirstCall from "@/components/sections/FirstCall";
-import Ledgerwright from "@/components/sections/Ledgerwright";
+import Audit from "@/components/sections/Audit";
 import FittedWork from "@/components/sections/FittedWork";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Studio from "@/components/sections/Studio";
@@ -19,7 +19,7 @@ export default function Page() {
         <Hero />
         <Hours />
         <FirstCall />
-        <Ledgerwright />
+        <Audit />
         <FittedWork />
         <HowWeWork />
         <Studio />

@@ -13,9 +13,14 @@ export default function BookACall() {
             <div className="inner">
               <div className="contact-side">
                 <p className="lede">
-                  What you run, roughly what it turns over, where the time disappears. We reply within three working days with a time for
-                  the call.
+                  Pick a time for the free discovery call now. Or tell us what you run, roughly what it turns over and where the time
+                  disappears, and we reply within three working days.
                 </p>
+                <div>
+                  <a className="btn ac" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                    Pick a time <span className="arr">→</span>
+                  </a>
+                </div>
                 <div className="spec">
                   <div className="row">
                     <div className="mono">Email</div>
@@ -29,10 +34,6 @@ export default function BookACall() {
                   <div className="row">
                     <div className="mono">Studio</div>
                     <p>London</p>
-                  </div>
-                  <div className="row">
-                    <div className="mono">This month</div>
-                    <p id="capLine">Ledgerwright installs open: 20</p>
                   </div>
                 </div>
               </div>
@@ -81,13 +82,10 @@ export default function BookACall() {
                   <label id="lblInt">What are you here for?</label>
                   <div className="chips" role="group" aria-labelledby="lblInt" data-name="interest">
                     <button type="button" aria-pressed="false" data-val="call">
-                      A first call
+                      A discovery call
                     </button>
-                    <button type="button" aria-pressed="false" data-val="ledgerwright">
-                      Buy Ledgerwright
-                    </button>
-                    <button type="button" aria-pressed="false" data-val="ledgerwright-call">
-                      Talk about Ledgerwright
+                    <button type="button" aria-pressed="false" data-val="audit">
+                      An audit
                     </button>
                     <button type="button" aria-pressed="false" data-val="fitted">
                       A custom build
@@ -138,7 +136,7 @@ export default function BookACall() {
                     the guide.
                   </p>
                   <button className="btn" type="submit">
-                    Book a call <span className="arr">→</span>
+                    Send <span className="arr">→</span>
                   </button>
                 </div>
                 <div className="done" id="applyDone" hidden>

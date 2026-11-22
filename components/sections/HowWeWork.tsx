@@ -8,10 +8,10 @@ export default function HowWeWork() {
           </div>
           <div>
             <h2 className="display">
-              First call to fitted in about <span className="ac">eight weeks</span>.
+              Discovery call to fitted in about <span className="ac">eight weeks</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              A typical fitted job. Tools are quicker: Ledgerwright is working inside thirty days. One fixed price, agreed before we start.
+              A typical job, with a three day audit. One fixed price for the audit and one for the build, each agreed before we start.
             </p>
             <div className="timeline">
               <div className="tl-head">
@@ -32,8 +32,8 @@ export default function HowWeWork() {
                 <div className="t">
                   <div className="mono">01</div>
                   <div>
-                    <h3>Call and scoping</h3>
-                    <p>One call, then one process mapped end to end and measured.</p>
+                    <h3>Discovery and audit</h3>
+                    <p>A free call, then days in the business and a written report.</p>
                   </div>
                 </div>
                 <div className="tl-track">
@@ -48,7 +48,7 @@ export default function HowWeWork() {
                   <div className="mono">02</div>
                   <div>
                     <h3>Decide</h3>
-                    <p>One fixed price. Go ahead and the scoping fee comes off the build.</p>
+                    <p>One fixed price, in the report. Go ahead and £2,500 of the audit fee comes off it.</p>
                   </div>
                 </div>
                 <div className="tl-track">
@@ -93,7 +93,7 @@ export default function HowWeWork() {
                   <div className="mono">05</div>
                   <div>
                     <h3>Keep</h3>
-                    <p>Ninety days of support until it is how you work.</p>
+                    <p>Ninety days of support, then a visit twice a year to see what to build next.</p>
                   </div>
                 </div>
                 <div className="tl-track">

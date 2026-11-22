@@ -16,9 +16,24 @@ export default function Studio() {
                   A consultant tells you what the ship needs. An agency builds a boat and leaves. A wright fits the thing into the structure
                   you already have, and stays until it holds.
                 </p>
+                <div className="people" style={{ marginTop: "28px" }}>
+                  <div className="person">
+                    <div className="mono">Don Demetrius</div>
+                    <p>
+                      <b>Founder and lead engineer.</b> Fifteen years of shipping software, leading engineering across games, fintech,
+                      e-commerce, blockchain and self-development products. Don runs every audit and builds what comes out of it.
+                    </p>
+                  </div>
+                  <div className="person">
+                    <div className="mono">Ivan</div>
+                    <p>
+                      <b>Engineer.</b> Builds alongside Don.
+                    </p>
+                  </div>
+                </div>
                 <details className="fold">
                   <summary>
-                    <span className="k">The name, the people, the numbers</span>
+                    <span className="k">The name and the numbers</span>
                     <span className="hint" />
                   </summary>
                   <div className="inner">
@@ -33,25 +48,8 @@ export default function Studio() {
                     </div>
                     <div className="people" style={{ marginTop: "0" }}>
                       <div className="person">
-                        <div className="mono">Who</div>
-                        <p>
-                          <b>An operator and a builder.</b> One of us has spent a career running a business and knows which hours actually
-                          matter. The other builds the tools. Every job gets both.
-                        </p>
-                      </div>
-                      <div className="person">
-                        <div className="mono">Where it started</div>
-                        <p>
-                          Ledgerwright began as an agent built to take Xero reconciliation off a real finance desk. Every tool after it
-                          starts the same way: a real job, on a real desk, that we were tired of doing by hand.
-                        </p>
-                      </div>
-                      <div className="person">
                         <div className="mono">How many</div>
-                        <p>
-                          A small number of businesses at a time. Twenty installs a month and a handful of fitted jobs. Enough to do it
-                          properly.
-                        </p>
+                        <p>A small number of businesses at a time. Enough to do each one properly.</p>
                       </div>
                     </div>
                     <figure className="plate" style={{ margin: "0" }}>
@@ -70,6 +68,13 @@ export default function Studio() {
                 </details>
               </div>
               <div className="plates">
+                <figure className="plate" style={{ margin: "0" }}>
+                  <img src="/images/don-demetrius.jpg" alt="Don Demetrius, founder and lead engineer at Gainwright" width="800" height="960" />
+                  <figcaption className="plate-cap mono">
+                    <span>Don Demetrius</span>
+                    <span>Founder · lead engineer</span>
+                  </figcaption>
+                </figure>
                 <figure className="plate" style={{ margin: "0" }}>
                   <img
                     src="/images/plate-02-checking-a-joint.jpg"

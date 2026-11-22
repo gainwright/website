@@ -16,8 +16,8 @@ export default function Header() {
           <span className="mono tag">AI · fitted · London</span>
         </a>
         <nav className="nav" aria-label="Primary">
-          <a href="#hours">The hours</a> <a href="#first-call">First call</a> <a href="#ledgerwright">Ledgerwright</a>{" "}
-          <a href="#fitted">Fitted work</a> <a href="#how">How we work</a> <a href="#apply">Contact</a>{" "}
+          <a href="#hours">The hours</a> <a href="#first-call">Discovery</a> <a href="#audit">The audit</a>{" "}
+          <a href="#fitted">What we build</a> <a href="#how">How we work</a> <a href="#apply">Contact</a>{" "}
           <a href="#apply" className="only-menu">
             Book a call →
           </a>

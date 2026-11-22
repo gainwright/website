@@ -27,8 +27,8 @@ export default function Hours() {
                   £29k<small>to £45k a year</small>
                 </div>
                 <p>
-                  is the full cost of an in-house bookkeeper: £24k to £35k salary plus 20 to 30% on-costs. Ledgerwright's setup fee is about
-                  six weeks of that.
+                  is the full cost of an in-house bookkeeper: £24k to £35k salary plus 20 to 30% on-costs. When the admin adds up to a whole
+                  role, that is what it costs every year.
                 </p>
                 <p className="mono src2">Xero UK hiring guide · National Careers Service</p>
               </div>
@@ -78,14 +78,6 @@ export default function Hours() {
                     worth.
                   </div>
                 </div>
-                <div className="ctl">
-                  <div className="lab">
-                    <span>Hours a month on bank reconciliation alone</span>
-                    <span id="vRec">15 hrs</span>
-                  </div>
-                  <input id="cRec" type="range" min="2" max="40" step="1" defaultValue="15" />
-                  <div className="under">Xero's survey of small businesses put the average at 15.5. Three in ten spend 20 to 40.</div>
-                </div>
               </div>
               <div className="out">
                 <div className="mono">Time back, a year</div>
@@ -98,22 +90,15 @@ export default function Hours() {
                   <b id="oCost">£52,800</b>
                 </div>
                 <div className="row2">
-                  <span>
-                    Ledgerwright takes reconciliation: <span id="oRecHrs">180</span> hrs a year, worth
-                  </span>
-                  <b id="oRec">£18,000</b>
-                </div>
-                <div className="row2">
-                  <span>£4,999 setup. Pays back in</span>
-                  <b className="ac" id="oPay">
-                    4 months
+                  <span>If fitted work takes half of them</span>
+                  <b className="ac" id="oHalf">
+                    £26,400
                   </b>
                 </div>
                 <p className="note">
-                  Payback counts only the hours, against the setup fee. It leaves out running costs of about £40 a month and the optional
-                  care plan at £400 a month. It also does not count month end arriving a week earlier, invoices chased on time, or what a
-                  person does with thirteen weeks. If the admin adds up to a whole role, that role is £29k to £45k a year against a £4,999
-                  setup fee. The call puts a rough figure on it, in your own numbers.
+                  Half is an assumption, not a promise. It counts only the hours. It does not count month end arriving a week earlier,
+                  invoices chased on time, or what a person does with the weeks they get back. The discovery call puts a rough figure on
+                  it in your own numbers, and the audit measures it properly.
                 </p>
                 <a className="btn" href="#apply" style={{ justifyContent: "center" }}>
                   Book a call <span className="arr">→</span>
@@ -167,8 +152,7 @@ export default function Hours() {
                   Sources: American Express SME Business Barometer with Small Business Saturday UK, 1,000 UK business owners, July 2026 (11
                   hours a week on admin and finance; 54% say paperwork gets in the way; 36% cite their own capacity as the biggest barrier
                   to growth). Xero UK, "Hiring a bookkeeper" guide (freelance £20 to £50 an hour; in-house £24,000 to £35,000 citing the
-                  National Careers Service, plus 20 to 30% on-costs; outsourced £120 to £700+ a month). Xero survey of small businesses
-                  (15.5 hours a month reconciling). British Chambers of Commerce with Atos, 668 UK businesses, Jan to Feb 2026 (54% using
+                  National Careers Service, plus 20 to 30% on-costs; outsourced £120 to £700+ a month). British Chambers of Commerce with Atos, 668 UK businesses, Jan to Feb 2026 (54% using
                   AI). Enterprise Nation with Strand Partners, 1,320 UK SMEs, May 2026 (6% embedded). The value of an hour is your own
                   figure.
                 </p>
