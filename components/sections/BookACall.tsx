@@ -4,23 +4,37 @@ export default function BookACall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>08</b>Book a call
+            <b>08</b>Book your First Sketch
           </div>
           <div>
             <h2 className="display">
               Tell us where the <span className="ac">hours</span> go.
             </h2>
-            <div className="inner">
+            <div className="contact-top">
               <div className="contact-side">
                 <p className="lede">
-                  Pick a time for the First Sketch now. It is a free 30 minute call. Or tell us what you run, roughly what it turns over and where the time
-                  disappears, and we reply within three working days.
+                  The quickest way in is the First Sketch, a free 30 minute call. Pick a time now, or tell us about the business below and
+                  we reply within three working days.
                 </p>
-                <div>
-                  <a className="btn ac" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
-                    Pick a time <span className="arr">→</span>
-                  </a>
+                <ol className="steps">
+                  <li>
+                    <b>You pick a time or send the form.</b> No preparation needed either way.
+                  </li>
+                  <li>
+                    <b>We talk for 30 minutes.</b> You leave with a rough figure for what one job costs you a year.
+                  </li>
+                  <li>
+                    <b>You decide.</b> If the figure is worth chasing, the Blueprint is next. If not, we say so.
+                  </li>
+                </ol>
+              </div>
+              <aside className="book-card" aria-label="Book your First Sketch">
+                <div className="mono">
+                  <b>Free</b>30 minutes · video call
                 </div>
+                <a className="btn ac" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                  Book your First Sketch <span className="arr">→</span>
+                </a>
                 <div className="spec">
                   <div className="row">
                     <div className="mono">Email</div>
@@ -32,9 +46,14 @@ export default function BookACall() {
                     </p>
                   </div>
                 </div>
-              </div>
+              </aside>
+            </div>
+            <div className="mono form-label">
+              <b>Or</b>Tell us about the business
+            </div>
+            <div>
               <form className="form" id="applyForm" noValidate>
-                <div className="f2">
+                <div className="f4">
                   <div className="field">
                     <label htmlFor="fName">Your name</label>
                     <input id="fName" name="name" type="text" autoComplete="name" placeholder="Karen Holm" required />
@@ -43,8 +62,6 @@ export default function BookACall() {
                     <label htmlFor="fEmail">Email</label>
                     <input id="fEmail" name="email" type="email" autoComplete="email" placeholder="karen@holmandco.co.uk" required />
                   </div>
-                </div>
-                <div className="f2">
                   <div className="field">
                     <label htmlFor="fCo">Business</label>
                     <input id="fCo" name="company" type="text" autoComplete="organization" placeholder="Holm &amp; Co Ltd" required />

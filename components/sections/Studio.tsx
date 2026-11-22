@@ -81,20 +81,6 @@ export default function Studio() {
                   </div>
                 </details>
               </div>
-              <div className="plates">
-                <figure className="plate" style={{ margin: "0" }}>
-                  <img
-                    src="/images/plate-02-checking-a-joint.jpg"
-                    alt="A wright's hands checking a timber joint for square with a steel try-square"
-                    width="1600"
-                    height="1195"
-                  />
-                  <figcaption className="plate-cap mono">
-                    <span>Plate 02 · Checking a joint for square</span>
-                    <span>Fitted work · built to fit what you have</span>
-                  </figcaption>
-                </figure>
-              </div>
             </div>
           </div>
         </div>

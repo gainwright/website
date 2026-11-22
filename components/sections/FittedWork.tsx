@@ -11,30 +11,39 @@ export default function FittedWork() {
               Built to order. Fitted to what you <span className="ac">already run</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              Two kinds of work follow a Blueprint. Both are fitted into your accounts, the inbox, the CRM and the sheets the business already lives
+              Three things follow a Blueprint. All of it is fitted into your accounts, the inbox, the CRM and the sheets the business already lives
               in.
             </p>
-            <div className="spec" style={{ marginTop: "28px" }}>
-              <div className="row">
-                <div className="mono">Custom software</div>
+            <div className="offers">
+              <article className="offer">
+                <div className="mono">
+                  <b>01</b>Build
+                </div>
+                <h3 className="display">Custom software</h3>
                 <p>
                   Built for one business, around one job that costs you real money. It reads what it needs to read, writes where it needs
                   to write, and asks a person when it is not sure. Anyone can put a tool together in an afternoon now. Keeping it secure,
                   keeping it running and getting a whole team to rely on it is the engineering, and that is the part we do.
                 </p>
-              </div>
-              <div className="row">
-                <div className="mono">Claude, set up safely</div>
+              </article>
+              <article className="offer">
+                <div className="mono">
+                  <b>02</b>Set up
+                </div>
+                <h3 className="display">Claude, set up safely</h3>
                 <p>
                   Most firms that have Claude have every person using it their own way, and nothing one person works out reaches the
                   rest. We set it up once for the whole team, without company or customer data going where it should not. Company accounts in
                   place of personal ones, access set by role, your written way of working loaded in, and clear rules on what goes in.
                 </p>
-              </div>
-              <div className="row">
-                <div className="mono">Your team, trained</div>
+              </article>
+              <article className="offer">
+                <div className="mono">
+                  <b>03</b>Hand over
+                </div>
+                <h3 className="display">Your team, trained</h3>
                 <p>Whatever we fit, we train the people who will use it, on their own work, until they run it without us.</p>
-              </div>
+              </article>
             </div>
             <p className="lede" style={{ marginTop: "28px" }}>
               Six examples. Open any one.

@@ -2,9 +2,9 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Gainwright Drawing Office",
+  title: "Gainwright AI: AI built into the business you already run",
   description:
-    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. The First Sketch, a free 30 minute call. The Blueprint, a fixed-price audit of where the hours go. Then then custom software and Claude set up safely across the business.",
+    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. The First Sketch, a free 30 minute call. The Blueprint, a fixed-price audit of where the hours go. Then custom software and Claude set up safely across the business.",
 };
 
 export const viewport: Viewport = {
