@@ -6,9 +6,7 @@ export default function Hero() {
           <div>
             <div className="mono eyebrow">AI, fitted into the business you already run</div>
             <h1 className="display">
-              You know you should be using AI.
-              <br />
-              We make it <span className="ac">happen</span>.
+              AI that earns its <span className="ac">keep</span>.
             </h1>
           </div>
           <div>
