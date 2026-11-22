@@ -407,8 +407,8 @@ p{margin:0}
 @media (max-width:500px){.people.team .person{grid-template-columns:96px minmax(0,1fr);gap:14px}}
 
 /* client testimonials */
-.voices{display:grid;gap:24px;margin-top:48px}
-.voice{margin:0;background:var(--card);border:1px solid var(--border);padding:clamp(22px,3vw,40px);display:grid;gap:26px;max-width:52em}
+.voices{display:grid;gap:24px;margin-top:48px;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));align-items:start}
+.voice{margin:0;background:var(--card);border:1px solid var(--border);padding:clamp(22px,3vw,40px);display:grid;gap:26px}
 .voice blockquote{margin:0;display:grid;gap:14px;border-left:3px solid var(--accent);padding-left:clamp(16px,2vw,24px)}
 .voice blockquote p{font-size:clamp(17px,1.3vw,19px);line-height:1.5;color:var(--fg)}
 .voice figcaption{display:flex;align-items:center;gap:16px}

@@ -14,6 +14,36 @@ export default function Clients() {
               <figure className="voice">
                 <blockquote>
                   <p>
+                    I pay for Claude, but no time to understand or utilise its capabilities whilst involved in fulfilment. I knew it was
+                    costing me. Every proposal would take me at least a day to create.
+                  </p>
+                  <p>
+                    I told Don what I needed and he made it happen - no hesitation. A personalised proposal for every founder I speak to
+                    without it pulling time from fulfilment. He built me a Claude skill that does exactly that. 30 minutes with Don and I'm
+                    running commands that deliver everything I need.
+                  </p>
+                  <p>I've saved days on every single prospect since then. 1 proposal is now worth 10.</p>
+                  <p>
+                    If you need AI in your business, and you've opened Claude with no idea what to do next, Don is your man. He'll save you
+                    time, and he'll make you more money.
+                  </p>
+                </blockquote>
+                <figcaption>
+                  <img src="/images/charlie-tillett.jpg" alt="Charlie Tillett" width="480" height="480" />
+                  <div>
+                    <b>Charlie Tillett</b>
+                    <span className="mono">
+                      <a href="https://tillettfilm.com" target="_blank" rel="noopener">
+                        Tillett Film
+                      </a>{" "}
+                      · brand films for founders and premium brands
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure className="voice">
+                <blockquote>
+                  <p>
                     I'd been developing my own CRM and business management system, learning as I went. As the project progressed, I reached a
                     point where I needed professional support to ensure the application was configured correctly, securely and ready to be
                     launched online.
