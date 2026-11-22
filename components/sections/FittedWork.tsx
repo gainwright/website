@@ -42,7 +42,11 @@ export default function FittedWork() {
                   <b>03</b>Hand over
                 </div>
                 <h3 className="display">Your team, trained</h3>
-                <p>Whatever we fit, we train the people who will use it, on their own work, until they run it without us.</p>
+                <p>
+                  Whatever we fit, we train the people who will use it. It starts with a few group seminars on the theory: what AI is, how
+                  tokens and context work, and what it can and cannot be trusted with. Then we spend days in person with your team, on
+                  their own work, until they run it without us.
+                </p>
               </article>
             </div>
             <p className="lede" style={{ marginTop: "28px" }}>
