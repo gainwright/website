@@ -35,7 +35,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* Cloudflare Web Analytics: counts page views, sets no cookies. Cloudflare's automatic injection does not reach this app's pages, so the beacon is included here. */}
+        <script
+          type="module"
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "8ded3c5b55ca4511bea5ff653ecd1c26"}'
+        />
+      </body>
     </html>
   );
 }
