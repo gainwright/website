@@ -141,7 +141,7 @@ export default function Hours() {
                       <b>Fitted</b>
                     </div>
                     <ul>
-                      <li>An agent reconciling Xero before anyone is in.</li>
+                      <li>An agent reconciling the bank before anyone is in.</li>
                       <li>Your written way of working loaded into Claude, so it answers like your best person.</li>
                       <li>Quotes drafted from the last fifty you won.</li>
                       <li>The month-end report on your desk by eight.</li>

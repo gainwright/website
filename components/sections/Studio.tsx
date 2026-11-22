@@ -16,21 +16,33 @@ export default function Studio() {
                   A consultant tells you what the ship needs. An agency builds a boat and leaves. A wright fits the thing into the structure
                   you already have, and stays until it holds.
                 </p>
-                <div className="people" style={{ marginTop: "28px" }}>
+                <div className="mono" style={{ marginTop: "36px" }}>
+                  <b>The humans behind the AI</b>Real people · real photos
+                </div>
+                <p className="lede" style={{ marginTop: "10px" }}>
+                  You don't hire an agency and get passed down the line. You work with the engineers who do the build.
+                </p>
+                <div className="people team" style={{ marginTop: "20px" }}>
                   <div className="person">
-                    <div className="mono">Don Demetrius</div>
-                    <p>
-                      <b>Founder and lead engineer.</b> Fifteen years of shipping software, leading engineering across games, fintech,
-                      e-commerce, blockchain and self-development products. Don runs every audit and builds what comes out of it.
-                    </p>
+                    <img src="/images/don-demetrius.jpg" alt="Don Demetrius" width="800" height="960" />
+                    <div>
+                      <div className="mono">Don Demetrius</div>
+                      <p>
+                        <b>Founder and lead engineer.</b> Fifteen years of shipping software, leading engineering across games, fintech,
+                        e-commerce, blockchain and self-development products. Don runs every audit and builds what comes out of it.
+                      </p>
+                    </div>
                   </div>
                   <div className="person">
-                    <div className="mono">Ivan Sesar</div>
-                    <p>
-                      <b>Full-stack engineer.</b> More than five years building web applications across fintech, cybersecurity and business
-                      software, from the screen people use to the cloud systems behind it. Ivan and Don have built software together
-                      before.
-                    </p>
+                    <img src="/images/ivan-sesar.jpg" alt="Ivan Sesar" width="800" height="960" />
+                    <div>
+                      <div className="mono">Ivan Sesar</div>
+                      <p>
+                        <b>Full-stack engineer.</b> More than five years building web applications across fintech, cybersecurity and
+                        business software, from the screen people use to the cloud systems behind it. Ivan and Don have built software
+                        together before.
+                      </p>
+                    </div>
                   </div>
                 </div>
                 <details className="fold">
@@ -57,7 +69,7 @@ export default function Studio() {
                     <figure className="plate" style={{ margin: "0" }}>
                       <img
                         src="/images/plate-03-drawing-office.jpg"
-                        alt="An empty drawing office with plans pinned to the wall and London rooftops through tall windows"
+                        alt="An empty drawing office with plans pinned to the wall and rooftops through tall windows"
                         width="1800"
                         height="1208"
                       />
@@ -70,20 +82,6 @@ export default function Studio() {
                 </details>
               </div>
               <div className="plates">
-                <div className="portraits">
-                  <figure className="plate" style={{ margin: "0" }}>
-                    <img src="/images/don-demetrius.jpg" alt="Don Demetrius, founder and lead engineer at Gainwright" width="800" height="960" />
-                    <figcaption className="plate-cap mono">
-                      <span>Don Demetrius</span>
-                    </figcaption>
-                  </figure>
-                  <figure className="plate" style={{ margin: "0" }}>
-                    <img src="/images/ivan-sesar.jpg" alt="Ivan Sesar, full-stack engineer at Gainwright" width="800" height="960" />
-                    <figcaption className="plate-cap mono">
-                      <span>Ivan Sesar</span>
-                    </figcaption>
-                  </figure>
-                </div>
                 <figure className="plate" style={{ margin: "0" }}>
                   <img
                     src="/images/plate-02-checking-a-joint.jpg"

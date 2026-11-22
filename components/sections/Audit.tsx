@@ -14,7 +14,10 @@ export default function Audit() {
               <div className="lw-copy">
                 <div style={{ display: "grid", gap: "18px" }}>
                   <p className="lede">
-                    The audit is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
+                    <b>We don't run on vibes. We run on blueprints.</b>
+                  </p>
+                  <p className="lede">
+                    The audit is the blueprint. It is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
                     and measure them. You get a written report that says where the hours go, what each job costs you, and what we would
                     build to take it away.
                   </p>
