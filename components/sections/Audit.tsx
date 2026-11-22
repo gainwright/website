@@ -19,7 +19,7 @@ export default function Audit() {
                     build to take it away.
                   </p>
                   <p className="lede">
-                    The report is yours whatever you decide. Ask us to build it and £2,500 of the audit fee comes off the price. Or take
+                    The report is yours whatever you decide. Ask us to build it and part of the audit fee comes off the price. Or take
                     the report and do it yourselves.
                   </p>
                 </div>
@@ -99,22 +99,22 @@ export default function Audit() {
                   </div>
                 </details>
               </div>
-              <aside className="price-card" aria-label="The audit: what it costs">
+              <aside className="price-card" aria-label="The audit: how it is sized">
                 <div className="mono">
-                  <b>What it costs</b>The audit
-                </div>
-                <div className="price">
-                  £5,000
-                  <small style={{ lineHeight: "1.45" }}>Fixed, plus VAT. Up to three days in the business.</small>
+                  <b>How it is sized</b>The audit
                 </div>
                 <div className="spec">
                   <div className="row">
-                    <div className="mono">Larger</div>
-                    <p>£7,500 plus VAT for up to five days in the business, when there are more teams to cover.</p>
+                    <div className="mono">Size</div>
+                    <p>Up to three days in the business, or up to five when there are more teams to cover.</p>
+                  </div>
+                  <div className="row">
+                    <div className="mono">Price</div>
+                    <p>One fixed fee, agreed on the discovery call before anything starts.</p>
                   </div>
                   <div className="row">
                     <div className="mono">Credited</div>
-                    <p>£2,500 comes off the build if you ask us to do the work.</p>
+                    <p>Part of the fee comes off the build if you ask us to do the work.</p>
                   </div>
                   <div className="row">
                     <div className="mono">Yours</div>

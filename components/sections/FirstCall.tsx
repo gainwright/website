@@ -24,8 +24,8 @@ export default function FirstCall() {
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
                   If we do, the next step is the audit. We spend days inside the business, measure the work properly and come back with a
-                  written report and a fixed price to remove most of it. The audit starts at £5,000 plus VAT, and £2,500 of it comes off
-                  the build if you go ahead.
+                  written report and a fixed price to remove most of it. The audit is a fixed fee, and part of it comes off the build if
+                  you go ahead.
                 </p>
                 <div style={{ marginTop: "28px" }}>
                   <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">

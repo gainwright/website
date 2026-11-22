@@ -48,7 +48,7 @@ export default function HowWeWork() {
                   <div className="mono">02</div>
                   <div>
                     <h3>Decide</h3>
-                    <p>One fixed price, in the report. Go ahead and £2,500 of the audit fee comes off it.</p>
+                    <p>One fixed price, in the report. Go ahead and part of the audit fee comes off it.</p>
                   </div>
                 </div>
                 <div className="tl-track">
