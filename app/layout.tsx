@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Gainwright Drawing Office",
   description:
-    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. A free 25 minute call, custom software built to fit, and fixed-price tools like Ledgerwright for Xero.",
+    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. A free 30 minute discovery call, a fixed-price audit of where the hours go, then custom software and Claude set up safely across the business.",
 };
 
 export const viewport: Viewport = {

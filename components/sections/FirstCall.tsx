@@ -4,31 +4,32 @@ export default function FirstCall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>02</b>First call · free
+            <b>02</b>Discovery · free
           </div>
           <div>
             <h2 className="display">
-              Start with a 25 minute <span className="ac">call</span>.
+              Start with a 30 minute discovery <span className="ac">call</span>.
             </h2>
             <div className="firstcall">
               <div>
                 <p className="lede">
-                  No forms to fill in and no two week review. One call, where you walk us through how the work gets done today.
+                  Free, and no forms to fill in first. One call, where you walk us through how the work gets done today.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
                   We're listening for one thing: a job your team does by hand that costs you real money every year. By the end of the call
                   you'll have a rough figure for what it costs, in your own numbers.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
-                  If we can't find a job costing you at least £20,000 a year, we'll say so on the call and you'll have lost 25 minutes.
+                  If we can't find a job costing you at least £20,000 a year, we'll say so on the call and you'll have lost 30 minutes.
                 </p>
                 <p className="lede" style={{ marginTop: "18px" }}>
-                  If we do, the next step is a scoping exercise. We map that one process end to end, measure it properly and come back with
-                  a fixed price to remove most of the work. Scoping costs £1,000 and is credited in full against the build if you go ahead.
+                  If we do, the next step is the audit. We spend days inside the business, measure the work properly and come back with a
+                  written report and a fixed price to remove most of it. The audit is a fixed fee, and part of it comes off the build if
+                  you go ahead.
                 </p>
                 <div style={{ marginTop: "28px" }}>
-                  <a className="btn" href="#apply">
-                    Book a call <span className="arr">→</span>
+                  <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                    Book a discovery call <span className="arr">→</span>
                   </a>
                 </div>
               </div>
@@ -43,7 +44,7 @@ export default function FirstCall() {
                   Tick what is true this month and we will name the jobs, and what we would fit for each.
                 </p>
                 <div id="qs">
-                  <div className="q" data-job="Ledgerwright: Xero reconciled every morning">
+                  <div className="q" data-job="Bank lines reconciled in your accounts every morning">
                     <span>Month end takes more than two days.</span>
                     <div className="yn">
                       <button type="button" className="yes" aria-pressed="false">

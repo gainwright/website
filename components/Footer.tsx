@@ -14,7 +14,7 @@ export default function Footer() {
               </svg>
             </a>
             <p className="desc">
-              AI fitted into established businesses: fixed-price tools and custom builds, built into the systems you already run.
+              AI fitted into established businesses: an audit of where the hours go, then custom software and Claude set up safely, built into the systems you already run.
             </p>
           </div>
           <div>
@@ -24,13 +24,13 @@ export default function Footer() {
                 <a href="#hours">The hours</a>
               </li>
               <li>
-                <a href="#first-call">First call</a>
+                <a href="#first-call">Discovery</a>
               </li>
               <li>
-                <a href="#ledgerwright">Ledgerwright</a>
+                <a href="#audit">The audit</a>
               </li>
               <li>
-                <a href="#fitted">Fitted work</a>
+                <a href="#fitted">What we build</a>
               </li>
               <li>
                 <a href="#how">How we work</a>
@@ -47,6 +47,12 @@ export default function Footer() {
                 <a className="ext" href="https://www.linkedin.com/" target="_blank" rel="noopener">
                   LinkedIn
                 </a>
+              </li>
+              <li>
+                <a href="/privacy">Privacy</a>
+              </li>
+              <li>
+                <a href="/terms">Terms</a>
               </li>
             </ul>
           </div>

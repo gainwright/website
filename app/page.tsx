@@ -4,11 +4,10 @@ import SiteInteractions from "@/components/SiteInteractions";
 import Hero from "@/components/sections/Hero";
 import Hours from "@/components/sections/Hours";
 import FirstCall from "@/components/sections/FirstCall";
-import Ledgerwright from "@/components/sections/Ledgerwright";
+import Audit from "@/components/sections/Audit";
 import FittedWork from "@/components/sections/FittedWork";
 import HowWeWork from "@/components/sections/HowWeWork";
 import Studio from "@/components/sections/Studio";
-import Guide from "@/components/sections/Guide";
 import BookACall from "@/components/sections/BookACall";
 
 export default function Page() {
@@ -19,11 +18,10 @@ export default function Page() {
         <Hero />
         <Hours />
         <FirstCall />
-        <Ledgerwright />
+        <Audit />
         <FittedWork />
         <HowWeWork />
         <Studio />
-        <Guide />
         <BookACall />
       </main>
       <Footer />

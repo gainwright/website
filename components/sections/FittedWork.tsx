@@ -4,15 +4,38 @@ export default function FittedWork() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>04</b>Fitted work
+            <b>04</b>What we build
           </div>
           <div>
             <h2 className="display">
               Built to order. Fitted to what you <span className="ac">already run</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              Custom software for one business, fitted into Xero, the inbox, the CRM and the sheets it already lives in. Six examples. Open
-              any one.
+              Two kinds of work follow an audit. Both are fitted into Xero, the inbox, the CRM and the sheets the business already lives
+              in.
+            </p>
+            <div className="spec" style={{ marginTop: "28px" }}>
+              <div className="row">
+                <div className="mono">Custom software</div>
+                <p>
+                  Built for one business, around one job that costs you real money. It reads what it needs to read, writes where it needs
+                  to write, and asks a person when it is not sure.
+                </p>
+              </div>
+              <div className="row">
+                <div className="mono">Claude, set up safely</div>
+                <p>
+                  Claude put to work across the business without company or customer data going where it should not. Company accounts in
+                  place of personal ones, access set by role, your written way of working loaded in, and clear rules on what goes in.
+                </p>
+              </div>
+              <div className="row">
+                <div className="mono">Your team, trained</div>
+                <p>Whatever we fit, we train the people who will use it, on their own work, until they run it without us.</p>
+              </div>
+            </div>
+            <p className="lede" style={{ marginTop: "28px" }}>
+              Six examples. Open any one.
             </p>
             <div className="works2">
               <details className="wk">
@@ -137,10 +160,10 @@ export default function FittedWork() {
             </div>
             <div className="works-foot">
               <p className="mono src" style={{ margin: "0" }}>
-                Examples, not a menu. Every job is one fixed price, agreed after scoping, with ninety days of support.
+                Examples, not a menu. Every job is one fixed price, quoted in the audit report, with ninety days of support.
               </p>
               <a className="btn" href="#apply" data-intent="fitted">
-                Enquire about a custom build <span className="arr">→</span>
+                Ask about a build <span className="arr">→</span>
               </a>
             </div>
           </div>

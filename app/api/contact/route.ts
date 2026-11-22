@@ -21,9 +21,8 @@ function isEmail(v: string): boolean {
 }
 
 const INTERESTS: Record<string, string> = {
-  call: "A first call",
-  ledgerwright: "Buy Ledgerwright",
-  "ledgerwright-call": "Talk about Ledgerwright",
+  call: "A discovery call",
+  audit: "An audit",
   fitted: "A custom build",
   claude: "Claude set up for our business",
 };
@@ -55,9 +54,6 @@ function compose(body: Fields): { subject: string; lines: string[]; replyTo: str
         text(body.hours) || "-",
       ],
     };
-  }
-  if (body.type === "guide") {
-    return { subject: `Guide request: ${email}`, replyTo: email, lines: [`${email} asked for Guide 01.`] };
   }
   if (body.type === "scorecard") {
     const jobs = Array.isArray(body.jobs) ? body.jobs.slice(0, 8).map((j) => line(j)).filter(Boolean) : [];
