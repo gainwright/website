@@ -15,7 +15,7 @@ export default function Hero() {
               it into the systems you already run, set Claude up safely, and stay until your team runs it without us.
             </p>
             <div className="hero-ctas">
-              <a className="btn" href="#apply">
+              <a className="btn" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
                 Book your First Sketch <span className="arr">→</span>
               </a>{" "}
               <a className="ulink" href="#hours">

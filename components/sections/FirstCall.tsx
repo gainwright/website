@@ -180,7 +180,7 @@ export default function FirstCall() {
                   <p className="mono" id="scoreDone" hidden />
                   <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
                     Or skip the email and{" "}
-                    <a className="ulink" href="#apply">
+                    <a className="ulink" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
                       book your First Sketch
                     </a>
                     .

@@ -36,7 +36,9 @@ export default function Footer() {
                 <a href="#how">How we work</a>
               </li>
               <li>
-                <a href="#apply">Book your First Sketch</a>
+                <a className="ext" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
+                  Book your First Sketch
+                </a>
               </li>
             </ul>
           </div>
@@ -44,7 +46,7 @@ export default function Footer() {
             <div className="mono">Elsewhere</div>
             <ul>
               <li>
-                <a className="ext" href="https://www.linkedin.com/" target="_blank" rel="noopener">
+                <a className="ext" href="https://www.linkedin.com/in/dondemetrius" target="_blank" rel="noopener">
                   LinkedIn
                 </a>
               </li>

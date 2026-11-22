@@ -125,7 +125,7 @@ export default function Audit() {
                   </div>
                 </div>
                 <div className="ctas">
-                  <a className="btn ac" href="#apply">
+                  <a className="btn ac" href="https://calendly.com/dondemetrius/30min" target="_blank" rel="noopener">
                     Book your First Sketch
                   </a>
                 </div>
