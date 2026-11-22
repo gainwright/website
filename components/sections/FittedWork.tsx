@@ -11,7 +11,7 @@ export default function FittedWork() {
               Built to order. Fitted to what you <span className="ac">already run</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              Two kinds of work follow an audit. Both are fitted into Xero, the inbox, the CRM and the sheets the business already lives
+              Two kinds of work follow an audit. Both are fitted into your accounts, the inbox, the CRM and the sheets the business already lives
               in.
             </p>
             <div className="spec" style={{ marginTop: "28px" }}>
@@ -91,7 +91,7 @@ export default function FittedWork() {
                       Chases overdue invoices on your schedule and in your tone, escalates politely, and tells you who to ring yourself.
                     </p>
                     <div className="mono tags">
-                      <span>Xero · Email</span>
+                      <span>Accounts · Email</span>
                       <span>Typical fit: 2 to 3 weeks</span>
                     </div>
                   </div>
@@ -111,7 +111,7 @@ export default function FittedWork() {
                       it from the report, not the customer.
                     </p>
                     <div className="mono tags">
-                      <span>Xero · CRM · your sheets</span>
+                      <span>Accounts · CRM · your sheets</span>
                       <span>Typical fit: 2 weeks</span>
                     </div>
                   </div>
@@ -131,7 +131,7 @@ export default function FittedWork() {
                       the board or the bank.
                     </p>
                     <div className="mono tags">
-                      <span>Xero · Sheets</span>
+                      <span>Accounts · Sheets</span>
                       <span>Typical fit: 3 weeks</span>
                     </div>
                   </div>

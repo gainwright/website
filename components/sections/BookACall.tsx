@@ -31,10 +31,6 @@ export default function BookACall() {
                       </button>
                     </p>
                   </div>
-                  <div className="row">
-                    <div className="mono">Studio</div>
-                    <p>London</p>
-                  </div>
                 </div>
               </div>
               <form className="form" id="applyForm" noValidate>
@@ -117,7 +113,7 @@ export default function BookACall() {
                   <textarea
                     id="fHours"
                     name="hours"
-                    placeholder="Month end, chasing invoices, re-keying orders into Xero, writing the same quote again…"
+                    placeholder="Month end, chasing invoices, re-keying orders into the accounts, writing the same quote again…"
                   />
                 </div>
                 <div className="f2">

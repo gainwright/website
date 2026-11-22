@@ -4,7 +4,7 @@ export default function Hero() {
       <div className="wrap">
         <div className="hero-copy">
           <div>
-            <div className="mono eyebrow">AI, fitted into the business you already run · London</div>
+            <div className="mono eyebrow">AI, fitted into the business you already run</div>
             <h1 className="display">
               AI that earns its <span className="ac">keep</span>.
             </h1>
@@ -29,7 +29,7 @@ export default function Hero() {
             <div className="mono">
               Fig. 01: a £3m business, as fitted
               <br />
-              Xero · inbox · CRM · sheets · calendar · files · one agent
+              Accounts · inbox · CRM · sheets · calendar · files · one agent
             </div>
             <svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true">
               <rect x="8" y="8" width="48" height="12" fill="var(--muted)" />

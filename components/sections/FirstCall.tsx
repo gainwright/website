@@ -99,7 +99,7 @@ export default function FirstCall() {
                       </button>
                     </div>
                   </div>
-                  <div className="q" data-job="A management report that writes itself from Xero and your CRM">
+                  <div className="q" data-job="A management report that writes itself from your accounts and your CRM">
                     <span>Management reports are built by hand in a spreadsheet.</span>
                     <div className="yn">
                       <button type="button" className="yes" aria-pressed="false">

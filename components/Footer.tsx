@@ -59,7 +59,6 @@ export default function Footer() {
           <div>
             <div className="mono">Studio</div>
             <ul>
-              <li>London</li>
               <li>hello@gainwright.ai</li>
               <li>gainwright.ai</li>
             </ul>
@@ -70,7 +69,7 @@ export default function Footer() {
         </div>
         <div className="ftr-bot mono">
           <span>© 2026 Gainwright · AI, fitted</span>
-          <span>London · GMT</span>
+          <span>United Kingdom</span>
         </div>
       </div>
     </footer>
