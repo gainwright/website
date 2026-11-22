@@ -22,7 +22,10 @@ export default function Clients() {
                     without it pulling time from fulfilment. He built me a Claude skill that does exactly that. 30 minutes with Don and I'm
                     running commands that deliver everything I need.
                   </p>
-                  <p>I've saved days on every single prospect since then. 1 proposal is now worth 10.</p>
+                  <p>
+                    I've saved days on every single prospect since then. 1 proposal is now worth 10. I've sent out £50,000 in proposals in
+                    just 2 weeks.
+                  </p>
                   <p>
                     If you need AI in your business, and you've opened Claude with no idea what to do next, Don is your man. He'll save you
                     time, and he'll make you more money.
