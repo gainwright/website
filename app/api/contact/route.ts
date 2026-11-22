@@ -16,8 +16,13 @@ function line(v: unknown, max = 200): string {
 function text(v: unknown, max = 4000): string {
   return typeof v === "string" ? v.trim().slice(0, max) : "";
 }
+/**
+ * One plain address and nothing else. Deliberately strict, because the scorecard sends mail to this
+ * address: no commas, semicolons, brackets, quotes or spaces that a mail library could read as a
+ * second recipient or a display name.
+ */
 function isEmail(v: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) && v.length <= 254;
+  return v.length <= 254 && /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+$/.test(v);
 }
 
 const INTERESTS: Record<string, string> = {
@@ -47,6 +52,29 @@ const SCORECARD_JOBS = [
 ];
 
 type Mail = { subject: string; lines: string[]; replyTo: string; visitor?: { to: string; subject: string; lines: string[] } };
+
+// Limits on the reply sent to visitors, separate from and tighter than the limits on notifying us, so
+// the form cannot be used to mail a stranger repeatedly. Held in memory, so they reset on restart.
+const REPLY_WINDOW_MS = 24 * 60 * 60 * 1000;
+const MAX_REPLIES_PER_RECIPIENT = 2; // per address, per day
+const MAX_REPLIES_OVERALL = 60; // across all addresses, per day
+const replies = new Map<string, number[]>();
+
+/** Records and allows a reply to this address, or returns false if it has had its share. */
+function mayReply(address: string): boolean {
+  const now = Date.now();
+  const fresh = (t: number) => now - t < REPLY_WINDOW_MS;
+  let total = 0;
+  for (const [key, times] of replies) {
+    const kept = times.filter(fresh);
+    if (kept.length) { replies.set(key, kept); total += kept.length; } else replies.delete(key);
+  }
+  const key = address.toLowerCase();
+  const mine = replies.get(key) || [];
+  if (mine.length >= MAX_REPLIES_PER_RECIPIENT || total >= MAX_REPLIES_OVERALL) return false;
+  replies.set(key, [...mine, now]);
+  return true;
+}
 
 /** The email a visitor gets back after asking for their scorecard list. */
 function scorecardReply(jobs: string[]): { subject: string; lines: string[] } {
@@ -97,7 +125,7 @@ function compose(body: Fields): Mail | null {
     return {
       subject: `Scorecard: ${email}, ${score} of 8`,
       replyTo: email,
-      lines: [`${email} asked for their scorecard list, and has been sent it.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
+      lines: [`${email} asked for their scorecard list. They are emailed it automatically, at most twice a day per address.`, `Score: ${score} of 8`, "", "Jobs ticked:", ...(jobs.length ? jobs.map((j) => `- ${j}`) : ["-"])],
       visitor: { to: email, ...scorecardReply(jobs) },
     };
   }
@@ -174,10 +202,11 @@ export async function POST(req: Request) {
     const port = Number(SMTP_PORT) || 465;
     const transport = nodemailer.createTransport({ host: SMTP_HOST, port, secure: port === 465, auth: { user: SMTP_USER, pass: SMTP_PASS } });
     await transport.sendMail({ from: FROM, to: TO, replyTo: mail.replyTo, subject: mail.subject, text: mail.lines.join("\n") });
-    if (mail.visitor) {
+    if (mail.visitor && mayReply(mail.visitor.to)) {
       // The visitor was promised their list by email. If this second send fails, say so, so the page shows its fallback message.
       const v = mail.visitor;
-      await transport.sendMail({ from: REPLY_FROM, to: v.to, replyTo: REPLY_TO, subject: v.subject, text: v.lines.join("\n") });
+      // The recipient is passed as a single structured address, so it can never be split into several.
+      await transport.sendMail({ from: REPLY_FROM, to: { name: "", address: v.to }, replyTo: REPLY_TO, subject: v.subject, text: v.lines.join("\n") });
     }
     return NextResponse.json({ ok: true, delivered: true });
   } catch (err) {
