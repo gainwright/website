@@ -8,8 +8,8 @@ export default function Privacy() {
     <LegalPage label="Privacy" title="What we do with your data." updated="22 November 2026">
       <h2>The short version</h2>
       <p>
-        Gainwright runs this site at gainwright.ai. We do not set tracking cookies, run third-party analytics or sell anything to
-        advertisers. If you send us a form, email us or book a call, we keep what you sent so we can reply and remember the conversation.
+        Gainwright runs this site at gainwright.ai. We do not set tracking cookies or sell anything to advertisers. We count
+        visits with Cloudflare Web Analytics, which uses no cookies. If you send us a form, email us or book a call, we keep what you sent so we can reply and remember the conversation.
       </p>
 
       <h2>Who we are</h2>
@@ -19,8 +19,8 @@ export default function Privacy() {
 
       <h2>What we collect on the website</h2>
       <p>
-        Reading the site does not require you to give us any personal data. We do not run analytics tools and we do not set marketing
-        cookies. The site remembers your choice of light or dark version in your own browser, and nowhere else.
+        Reading the site does not require you to give us any personal data. We count page views with Cloudflare Web Analytics, which sets
+        no cookies, does not follow you across other sites and does not build a profile of you. We do not set marketing cookies. The site remembers your choice of light or dark version in your own browser, and nowhere else.
       </p>
       <p>
         The site is served through Cloudflare from a server hosted with Hetzner. Both process limited request data, such as your IP address,
