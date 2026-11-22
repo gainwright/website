@@ -19,13 +19,15 @@ export default function FittedWork() {
                 <div className="mono">Custom software</div>
                 <p>
                   Built for one business, around one job that costs you real money. It reads what it needs to read, writes where it needs
-                  to write, and asks a person when it is not sure.
+                  to write, and asks a person when it is not sure. Anyone can put a tool together in an afternoon now. Keeping it secure,
+                  keeping it running and getting a whole team to rely on it is the engineering, and that is the part we do.
                 </p>
               </div>
               <div className="row">
                 <div className="mono">Claude, set up safely</div>
                 <p>
-                  Claude put to work across the business without company or customer data going where it should not. Company accounts in
+                  Most firms that have Claude have every person using it their own way, and nothing one person works out reaches the
+                  rest. We set it up once for the whole team, without company or customer data going where it should not. Company accounts in
                   place of personal ones, access set by role, your written way of working loaded in, and clear rules on what goes in.
                 </p>
               </div>
