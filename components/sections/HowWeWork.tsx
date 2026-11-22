@@ -11,7 +11,7 @@ export default function HowWeWork() {
               First Sketch to fitted in about <span className="ac">eight weeks</span>.
             </h2>
             <p className="lede" style={{ marginTop: "24px" }}>
-              A typical job, with a three day Blueprint. One fixed price for the Blueprint and one for the build, each agreed before we start.
+              A typical job, with a three day Blueprint. Larger ones run to five. One fixed price for the Blueprint and one for the build, each agreed before we start.
             </p>
             <div className="timeline">
               <div className="tl-head">

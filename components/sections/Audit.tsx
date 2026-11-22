@@ -109,7 +109,10 @@ export default function Audit() {
                 <div className="spec">
                   <div className="row">
                     <div className="mono">Size</div>
-                    <p>Up to three days in the business, or up to five when there are more teams to cover. Many start with one team and work through the rest.</p>
+                    <p>
+                      Three to five days in the business, depending on how many teams there are to cover. We scope it with you on the First
+                      Sketch call.
+                    </p>
                   </div>
                   <div className="row">
                     <div className="mono">Price</div>
