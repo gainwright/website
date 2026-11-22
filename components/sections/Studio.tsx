@@ -25,9 +25,11 @@ export default function Studio() {
                     </p>
                   </div>
                   <div className="person">
-                    <div className="mono">Ivan</div>
+                    <div className="mono">Ivan Sesar</div>
                     <p>
-                      <b>Engineer.</b> Builds alongside Don.
+                      <b>Full-stack engineer.</b> More than five years building web applications across fintech, cybersecurity and business
+                      software, from the screen people use to the cloud systems behind it. Ivan and Don have built software together
+                      before.
                     </p>
                   </div>
                 </div>
@@ -68,13 +70,20 @@ export default function Studio() {
                 </details>
               </div>
               <div className="plates">
-                <figure className="plate" style={{ margin: "0" }}>
-                  <img src="/images/don-demetrius.jpg" alt="Don Demetrius, founder and lead engineer at Gainwright" width="800" height="960" />
-                  <figcaption className="plate-cap mono">
-                    <span>Don Demetrius</span>
-                    <span>Founder · lead engineer</span>
-                  </figcaption>
-                </figure>
+                <div className="portraits">
+                  <figure className="plate" style={{ margin: "0" }}>
+                    <img src="/images/don-demetrius.jpg" alt="Don Demetrius, founder and lead engineer at Gainwright" width="800" height="960" />
+                    <figcaption className="plate-cap mono">
+                      <span>Don Demetrius</span>
+                    </figcaption>
+                  </figure>
+                  <figure className="plate" style={{ margin: "0" }}>
+                    <img src="/images/ivan-sesar.jpg" alt="Ivan Sesar, full-stack engineer at Gainwright" width="800" height="960" />
+                    <figcaption className="plate-cap mono">
+                      <span>Ivan Sesar</span>
+                    </figcaption>
+                  </figure>
+                </div>
                 <figure className="plate" style={{ margin: "0" }}>
                   <img
                     src="/images/plate-02-checking-a-joint.jpg"
