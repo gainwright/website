@@ -8,7 +8,7 @@ export default function Audit() {
           </div>
           <div>
             <h2 className="display">
-              We spend days inside the business before we quote for <span className="ac">anything</span>.
+              We measure the work before we quote for <span className="ac">anything</span>.
             </h2>
             <div className="lw">
               <div className="lw-copy">

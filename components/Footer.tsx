@@ -36,7 +36,7 @@ export default function Footer() {
                 <a href="#how">How we work</a>
               </li>
               <li>
-                <a href="#apply">Book a call</a>
+                <a href="#apply">Book your First Sketch</a>
               </li>
             </ul>
           </div>

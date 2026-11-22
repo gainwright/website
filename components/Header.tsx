@@ -19,7 +19,7 @@ export default function Header() {
           <a href="#hours">The hours</a> <a href="#first-call">First Sketch</a> <a href="#audit">The Blueprint</a>{" "}
           <a href="#fitted">What we build</a> <a href="#how">How we work</a> <a href="#apply">Contact</a>{" "}
           <a href="#apply" className="only-menu">
-            Book a call →
+            Book your First Sketch →
           </a>
         </nav>
         <div className="hdr-right">
@@ -39,7 +39,7 @@ export default function Header() {
             </svg>
           </button>{" "}
           <a className="btn" href="#apply">
-            Book a call
+            Book your First Sketch
           </a>{" "}
           <button className="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true">

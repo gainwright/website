@@ -101,7 +101,7 @@ export default function Hours() {
                   it in your own numbers, and the Blueprint measures it properly.
                 </p>
                 <a className="btn" href="#apply" style={{ justifyContent: "center" }}>
-                  Book a call <span className="arr">→</span>
+                  Book your First Sketch <span className="arr">→</span>
                 </a>
               </div>
             </div>

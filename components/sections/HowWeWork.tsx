@@ -33,7 +33,7 @@ export default function HowWeWork() {
                   <div className="mono">01</div>
                   <div>
                     <h3>First Sketch and Blueprint</h3>
-                    <p>A free call, then days in the business and a written report.</p>
+                    <p>A free call, then time inside the business and a written report.</p>
                   </div>
                 </div>
                 <div className="tl-track">

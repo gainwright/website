@@ -6,17 +6,19 @@ export default function Hero() {
           <div>
             <div className="mono eyebrow">AI, fitted into the business you already run</div>
             <h1 className="display">
-              AI that earns its <span className="ac">keep</span>.
+              You know you should be using AI.
+              <br />
+              We make it <span className="ac">happen</span>.
             </h1>
           </div>
           <div>
             <p className="lede">
-              We build AI into the systems you already run, so the routine work does itself and your people spend their time where the
-              revenue is: with customers.
+              You know AI could change how your business works. You're just not sure where to start, or whether to trust it. We build
+              it into the systems you already run, set Claude up safely, and stay until your team runs it without us.
             </p>
             <div className="hero-ctas">
               <a className="btn" href="#apply">
-                Book a call <span className="arr">→</span>
+                Book your First Sketch <span className="arr">→</span>
               </a>{" "}
               <a className="ulink" href="#hours">
                 What the admin costs you
