@@ -25,6 +25,18 @@ export default function FittedWork() {
                   to write, and asks a person when it is not sure. Anyone can put a tool together in an afternoon now. Keeping it secure,
                   keeping it running and getting a whole team to rely on it is the engineering, and that is the part we do.
                 </p>
+                <div className="incl">
+                  <div className="mono">What is included</div>
+                  <ul>
+                    <li>Built on your real data</li>
+                    <li>A person approves anything it is unsure of</li>
+                    <li>Access controls, logs and backups</li>
+                    <li>Tested against last month&apos;s work</li>
+                    <li>Hosting and monitoring</li>
+                    <li>Written documentation</li>
+                    <li>Ninety days of support</li>
+                  </ul>
+                </div>
               </article>
               <article className="offer">
                 <div className="mono">
@@ -36,6 +48,19 @@ export default function FittedWork() {
                   rest. We set it up once for the whole team, without company or customer data going where it should not. Company accounts in
                   place of personal ones, access set by role, your written way of working loaded in, and clear rules on what goes in.
                 </p>
+                <div className="incl">
+                  <div className="mono">What is included</div>
+                  <ul>
+                    <li>A review of who uses what today</li>
+                    <li>Company accounts in place of personal ones</li>
+                    <li>Access set by role</li>
+                    <li>Written rules on what data may go in</li>
+                    <li>Connections to email, files and CRM</li>
+                    <li>Your way of working loaded in</li>
+                    <li>A shared library of skills</li>
+                    <li>Handover to a named admin</li>
+                  </ul>
+                </div>
               </article>
               <article className="offer">
                 <div className="mono">
@@ -47,6 +72,16 @@ export default function FittedWork() {
                   tokens and context work, and what it can and cannot be trusted with. Then we spend days in person with your team, on
                   their own work, until they run it without us.
                 </p>
+                <div className="incl">
+                  <div className="mono">What is included</div>
+                  <ul>
+                    <li>Group seminars on the theory</li>
+                    <li>In-person days on your team&apos;s own work</li>
+                    <li>A short playbook for each role</li>
+                    <li>A named champion in each team</li>
+                    <li>A follow-up session once it has bedded in</li>
+                  </ul>
+                </div>
               </article>
             </div>
             <p className="lede" style={{ marginTop: "28px" }}>

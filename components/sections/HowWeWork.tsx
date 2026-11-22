@@ -39,7 +39,7 @@ export default function HowWeWork() {
                 <div className="tl-track">
                   <div className="tl-bar" style={{ left: "0", width: "25%" }}>
                     <span>2 weeks</span>
-                    <span>Wk 0–2</span>
+                    <span>Wk 0 to 2</span>
                   </div>
                 </div>
               </div>
@@ -54,7 +54,7 @@ export default function HowWeWork() {
                 <div className="tl-track">
                   <div className="tl-bar n" style={{ left: "25%", width: "12.5%" }}>
                     <span>1 week</span>
-                    <span>Wk 2–3</span>
+                    <span>Wk 2 to 3</span>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ export default function HowWeWork() {
                 <div className="tl-track">
                   <div className="tl-bar" style={{ left: "37.5%", width: "43.75%" }}>
                     <span>3 to 4 weeks</span>
-                    <span>Wk 3–7</span>
+                    <span>Wk 3 to 7</span>
                   </div>
                 </div>
               </div>
@@ -84,7 +84,7 @@ export default function HowWeWork() {
                 <div className="tl-track">
                   <div className="tl-bar n" style={{ left: "81.25%", width: "18.75%" }}>
                     <span>1 week</span>
-                    <span>Wk 7–8</span>
+                    <span>Wk 7 to 8</span>
                   </div>
                 </div>
               </div>
