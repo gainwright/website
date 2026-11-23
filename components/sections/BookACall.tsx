@@ -108,23 +108,6 @@ export default function BookACall() {
                 </div>
               </div>
               <div className="field">
-                <label id="lblBooks">What runs your books?</label>
-                <div className="chips" role="group" aria-labelledby="lblBooks" data-name="books">
-                  <button type="button" aria-pressed="false">
-                    Xero
-                  </button>
-                  <button type="button" aria-pressed="false">
-                    QuickBooks
-                  </button>
-                  <button type="button" aria-pressed="false">
-                    Sage
-                  </button>
-                  <button type="button" aria-pressed="false">
-                    Something else
-                  </button>
-                </div>
-              </div>
-              <div className="field">
                 <label htmlFor="fHours">Where do the hours go?</label>
                 <textarea
                   id="fHours"
