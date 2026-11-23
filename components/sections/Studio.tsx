@@ -26,7 +26,11 @@ export default function Studio() {
                   <div className="person">
                     <img src="/images/don-demetrius.jpg" alt="Don Demetrius" width="800" height="960" />
                     <div>
-                      <div className="mono">Don Demetrius</div>
+                      <div className="mono">
+                        <a href="https://www.linkedin.com/in/dondemetrius" target="_blank" rel="noopener">
+                          Don Demetrius
+                        </a>
+                      </div>
                       <p>
                         <b>Founder and lead engineer.</b> Fifteen years of shipping software, leading engineering across games, fintech,
                         e-commerce, blockchain and self-development products. Don runs every Blueprint and builds what comes out of it.
@@ -36,7 +40,11 @@ export default function Studio() {
                   <div className="person">
                     <img src="/images/ivan-sesar.jpg" alt="Ivan Sesar" width="800" height="960" />
                     <div>
-                      <div className="mono">Ivan Sesar</div>
+                      <div className="mono">
+                        <a href="https://www.linkedin.com/in/sesar-ivan/" target="_blank" rel="noopener">
+                          Ivan Sesar
+                        </a>
+                      </div>
                       <p>
                         <b>Full-stack engineer.</b> More than five years building web applications across fintech, cybersecurity and
                         business software, from the screen people use to the cloud systems behind it. Ivan and Don have built software
