@@ -65,7 +65,12 @@ export default function Clients() {
                   <img src="/images/luke-heaver.jpg" alt="Luke Heaver" width="480" height="480" />
                   <div>
                     <b>Luke Heaver</b>
-                    <span className="mono">Exact Architectural Glazing · audit and deployment of his own business system</span>
+                    <span className="mono">
+                      <a href="https://exactag.co.uk/" target="_blank" rel="noopener">
+                        Exact Architectural Glazing
+                      </a>{" "}
+                      · audit and deployment of his own business system
+                    </span>
                   </div>
                 </figcaption>
               </figure>
