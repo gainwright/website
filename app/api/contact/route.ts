@@ -126,7 +126,6 @@ function compose(body: Fields): Mail | null {
         `Website: ${line(body.website) || "-"}`,
         `Turnover: ${line(body.turnover) || "-"}`,
         `Here for: ${INTERESTS[interest] || interest || "-"}`,
-        `Books: ${line(body.books) || "-"}`,
         `Wants to start: ${line(body.when) || "-"}`,
         `Heard about us: ${line(body.heard) || "-"}`,
         "",
