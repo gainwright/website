@@ -24,17 +24,19 @@ export default function Book() {
               <h1 className="display" style={{ fontSize: "clamp(34px,4.4vw,62px)" }}>
                 Book your 20 minute <span className="ac">call</span>.
               </h1>
-              <p className="lede" style={{ marginTop: "24px" }}>
-                Answer seven short questions, then pick a time. It takes about two minutes. We ask these first so the call
-                starts on your business, not on introductions.
-              </p>
-              <p className="lede" style={{ marginTop: "14px" }}>
-                By the time we speak we have read your answers and looked at the systems you use, so the 20 minutes go on the
-                jobs that are eating into your week and what each one is worth.
-              </p>
-              <p className="lede" style={{ marginTop: "14px" }}>
-                You leave with a shortlist of three, in order, and a straight answer on whether it is worth going any further.
-              </p>
+              <div className="book-intro">
+                <p className="lede">
+                  Answer seven short questions, then pick a time. It takes about two minutes. We ask these first so the call
+                  starts on your business, not on introductions.
+                </p>
+                <p className="lede">
+                  By the time we speak we have read your answers and looked at the systems you use, so the 20 minutes go on the
+                  jobs that are eating into your week and what each one is worth.
+                </p>
+                <p className="lede">
+                  You leave with a shortlist of three, in order, and a straight answer on whether it is worth going any further.
+                </p>
+              </div>
               <BookingForm />
             </div>
           </div>
