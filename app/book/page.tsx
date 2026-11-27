@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function Book() {
   return (
     <main>
-      <section className="section contact" style={{ borderTop: "0" }}>
+      <section className="section" style={{ borderTop: "0" }}>
         <div className="wrap">
           <div className="section-head">
             <div className="mono">
