@@ -25,11 +25,15 @@ export default function Book() {
                 Book your 20 minute <span className="ac">call</span>.
               </h1>
               <p className="lede" style={{ marginTop: "24px" }}>
-                Answer seven short questions, then pick a time. It takes about two minutes.
+                Answer seven short questions, then pick a time. It takes about two minutes. We ask these first so the call
+                starts on your business, not on introductions.
               </p>
               <p className="lede" style={{ marginTop: "14px" }}>
-                We ask first so the call starts on your business, not on introductions. You leave with a shortlist of three
-                jobs, in order, and a straight answer on whether it is worth going further.
+                By the time we speak we have read your answers and looked at the systems you use, so the 20 minutes go on the
+                jobs that are eating into your week and what each one is worth.
+              </p>
+              <p className="lede" style={{ marginTop: "14px" }}>
+                You leave with a shortlist of three, in order, and a straight answer on whether it is worth going any further.
               </p>
               <BookingForm />
             </div>
