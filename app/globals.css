@@ -472,3 +472,10 @@ p{margin:0}
 .scorecard #qs{grid-column:2;grid-row:1/span 2;border-top:1px solid var(--fg)}
 .scorecard .result{grid-column:1;grid-row:2;min-width:0}
 @media (max-width:1100px){.scorecard{grid-template-columns:1fr;grid-template-rows:none}.scorecard .sc-side,.scorecard #qs,.scorecard .result{grid-column:auto;grid-row:auto}}
+
+/* slightly rounded corners, set in one place: controls a little, cards a little more */
+:root{--r-ctl:6px;--r-card:10px}
+.btn,.chips button,.copy-btn,.detail-btn,.menu-btn,.q .yn,.seg,.inline-form input,.wk summary .pm{border-radius:var(--r-ctl)}
+.form,.voice,.book-card,.card,.price-card,.offer,.calc,.calc .out,.plate,.defn,.guide-cover,.book-cal{border-radius:var(--r-card)}
+.seg,.plate,.guide-cover,.book-cal{overflow:hidden}
+.people.team .person img{border-radius:var(--r-ctl)}
