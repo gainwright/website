@@ -24,7 +24,7 @@ export default function BookingForm() {
         <label className="ask" htmlFor="fAbout">
           <b>1</b>What does the business do, and roughly how many people work in it?
         </label>
-        <textarea id="fAbout" name="about" required />
+        <textarea id="fAbout" name="about" rows={1} required />
       </div>
       <div className="field askf">
         <label className="ask" id="lblTime">
