@@ -49,7 +49,7 @@ export default function Footer() {
             <div className="mono">Elsewhere</div>
             <ul>
               <li>
-                <a className="ext" href="https://www.linkedin.com/in/dondemetrius" target="_blank" rel="noopener">
+                <a className="ext" href="https://www.linkedin.com/company/gainwright" target="_blank" rel="noopener">
                   LinkedIn
                 </a>
               </li>
