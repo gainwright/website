@@ -30,7 +30,7 @@ export default function Privacy() {
 
       <h2>What we collect when you contact us</h2>
       <p>
-        The site has two forms: the call request and the scorecard. Each sends us an email containing what you typed,
+        The site has two forms: the call booking questions and the scorecard. Each sends us an email containing what you typed,
         which is typically your name, email address, business, and anything you tell us about it. We use it to reply, to send what you
         asked for and to arrange a call. We do not add you to a mailing list unless you ask us to.
       </p>
@@ -40,7 +40,7 @@ export default function Privacy() {
         address it sent to for a day, in memory only, so that nobody can use the form to email you repeatedly.
       </p>
       <p>
-        Emails are stored by our mail provider. Call bookings are handled by Calendly, which has its own privacy policy.
+        Emails are stored by our mail provider. Call bookings are handled by Calendly, which has its own privacy policy. When you finish the booking questions we pass your name and email address to Calendly, so you do not have to type them twice. Your answers stay with us.
       </p>
 
       <h2>How long we keep things</h2>

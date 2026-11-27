@@ -4,7 +4,7 @@ export default function Hours() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>01</b>What you get back
+            <b>02</b>What you get back
           </div>
           <div>
             <h2 className="display">
@@ -97,11 +97,11 @@ export default function Hours() {
                 </div>
                 <p className="note">
                   Half is an assumption, not a promise. It counts only the hours. It does not count month end arriving a week earlier,
-                  invoices chased on time, or what a person does with the weeks they get back. The First Sketch call puts a rough figure on
-                  it in your own numbers, and the Blueprint measures it properly.
+                  invoices chased on time, or what a person does with the weeks they get back. The 20 minute call puts a rough figure on
+                  it in your own numbers, and the Gain Audit measures it properly.
                 </p>
-                <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener" style={{ justifyContent: "center" }}>
-                  Book your First Sketch <span className="arr">→</span>
+                <a className="btn" href="#apply" style={{ justifyContent: "center" }}>
+                  Book your 20 minute call <span className="arr">→</span>
                 </a>
               </div>
             </div>

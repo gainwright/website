@@ -4,7 +4,7 @@ export default function Clients() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>05</b>From clients
+            <b>06</b>From clients
           </div>
           <div>
             <h2 className="display">

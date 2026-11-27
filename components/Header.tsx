@@ -16,10 +16,10 @@ export default function Header() {
           <span className="mono tag">AI · fitted</span>
         </a>
         <nav className="nav" aria-label="Primary">
-          <a href="#hours">The hours</a> <a href="#first-call">First Sketch</a> <a href="#audit">The Blueprint</a>{" "}
+          <a href="#studio">Who we are</a> <a href="#hours">The hours</a> <a href="#first-call">The call</a> <a href="#audit">Gain Audit</a>{" "}
           <a href="#fitted">What we build</a> <a href="#how">How we work</a> <a href="#apply">Contact</a>{" "}
-          <a href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener" className="only-menu">
-            Book your First Sketch →
+          <a href="#apply" className="only-menu">
+            Book your 20 minute call →
           </a>
         </nav>
         <div className="hdr-right">
@@ -38,8 +38,8 @@ export default function Header() {
               <path d="M12 3a9 9 0 0 1 0 18z" fill="currentColor" />
             </svg>
           </button>{" "}
-          <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-            Book your First Sketch
+          <a className="btn" href="#apply">
+            Book a call
           </a>{" "}
           <button className="menu-btn" id="menuBtn" type="button" aria-label="Menu" aria-expanded="false">
             <svg viewBox="0 0 24 24" aria-hidden="true">
