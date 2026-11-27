@@ -28,10 +28,8 @@ export default function Book() {
                 Answer seven short questions, then pick a time. It takes about two minutes.
               </p>
               <p className="lede" style={{ marginTop: "14px" }}>
-                We ask these first so the call starts on your business, not on introductions. By the time we speak we have read
-                your answers and looked at the systems you use, so the 20 minutes go on the jobs that are eating into your week
-                and what each one is worth. You leave with a shortlist of three, in order, and a straight answer on whether it
-                is worth going any further.
+                We ask first so the call starts on your business, not on introductions. You leave with a shortlist of three
+                jobs, in order, and a straight answer on whether it is worth going further.
               </p>
               <BookingForm />
             </div>
