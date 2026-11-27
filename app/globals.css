@@ -80,7 +80,7 @@ p{margin:0}
 .brand .name{font-family:var(--font-display);font-weight:580;font-size:21px;letter-spacing:-.04em;line-height:1}
 .brand .name i{font-style:normal;color:var(--accent)}
 .brand .tag{margin-left:6px;padding-top:2px}
-.nav{display:flex;gap:24px;font-size:15px;white-space:nowrap}
+.nav{display:flex;gap:20px;font-size:15px;white-space:nowrap}
 .nav a{text-decoration:none;color:var(--fg-soft);padding:6px 0;border-bottom:1.5px solid transparent;transition:color .15s,border-color .15s}
 .nav a:hover,.nav a[aria-current]{color:var(--fg);border-color:var(--fg)}
 .nav a.only-menu{display:none}
@@ -479,3 +479,6 @@ p{margin:0}
 .form,.voice,.book-card,.card,.price-card,.offer,.calc,.calc .out,.plate,.defn,.guide-cover,.book-cal{border-radius:var(--r-card)}
 .seg,.plate,.guide-cover,.book-cal{overflow:hidden}
 .people.team .person img{border-radius:var(--r-ctl)}
+.detail-btn{white-space:nowrap}
+/* eight nav links: drop the tag beside the logo and tighten the links until there is room for both */
+@media (max-width:1620px){.hdr .tag{display:none}.nav{gap:18px}}
