@@ -34,7 +34,8 @@ export default function Book() {
                   jobs that are eating into your week and what each one is worth.
                 </p>
                 <p className="lede">
-                  You leave with a shortlist of three, in order, and a straight answer on whether it is worth going any further.
+                  You leave with a rough figure for what your top job is costing you each year, and a straight answer on whether
+                  it is worth going any further.
                 </p>
               </div>
               <BookingForm />
