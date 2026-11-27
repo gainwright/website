@@ -19,15 +19,15 @@ export default function FirstCall() {
                   <li>
                     <div className="mono">01</div>
                     <div>
-                      <h3>We listen for one job</h3>
-                      <p>A job your team does by hand that costs you real money every year.</p>
+                      <h3>We listen for where the time goes</h3>
+                      <p>The work your team does by hand that costs you real money every year.</p>
                     </div>
                   </li>
                   <li>
                     <div className="mono">02</div>
                     <div>
                       <h3>You leave with a figure</h3>
-                      <p>A rough cost for that job, in your own numbers, by the end of the call.</p>
+                      <p>A rough cost for that work, in your own numbers, by the end of the call.</p>
                     </div>
                   </li>
                   <li>
