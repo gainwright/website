@@ -17,10 +17,10 @@ export default function BookACall() {
                 </p>
                 <ol className="steps">
                   <li>
-                    <b>You answer seven questions.</b> We arrive knowing the business, so the 20 minutes go on the job that matters.
+                    <b>You answer seven questions.</b> We arrive knowing the business, so the 20 minutes go on the work that matters.
                   </li>
                   <li>
-                    <b>We talk for 20 minutes.</b> You leave with a rough figure for what one job costs you a year.
+                    <b>We talk for 20 minutes.</b> You leave with a rough figure for what that work costs you a year.
                   </li>
                   <li>
                     <b>You decide.</b> If the figure is worth chasing, the Gain Audit is next. If not, we say so.
