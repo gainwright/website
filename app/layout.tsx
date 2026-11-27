@@ -3,7 +3,7 @@ import "./globals.css";
 
 const title = "Gainwright AI: AI built into the business you already run";
 const summary =
-  "We build AI into the systems you already run, set Claude up safely, and train your team. Start with the First Sketch, a free 30 minute call.";
+  "We build AI into the systems you already run, set Claude up safely, and train your team. Start with a free 20 minute call.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://gainwright.ai"),
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", url: "/", siteName: "Gainwright", locale: "en_GB", title, description: summary },
   twitter: { card: "summary_large_image", title, description: summary },
   description:
-    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. The First Sketch, a free 30 minute call. The Blueprint, a fixed-price audit of where the hours go. Then custom software and Claude set up safely across the business.",
+    "Gainwright builds AI into the systems a business already runs, so routine work does itself and people spend their time with customers. A free 20 minute call. The Gain Audit, a fixed-price audit of where the hours go. Then custom software and Claude set up safely across the business.",
 };
 
 export const viewport: Viewport = {

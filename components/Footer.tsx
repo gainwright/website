@@ -14,20 +14,23 @@ export default function Footer() {
               </svg>
             </a>
             <p className="desc">
-              AI fitted into established businesses: the Blueprint, an audit of where the hours go, then custom software and Claude set up safely, built into the systems you already run.
+              AI fitted into established businesses: the Gain Audit, an audit of where the hours go, then custom software and Claude set up safely, built into the systems you already run.
             </p>
           </div>
           <div>
             <div className="mono">Index</div>
             <ul>
               <li>
+                <a href="#studio">Who we are</a>
+              </li>
+              <li>
                 <a href="#hours">The hours</a>
               </li>
               <li>
-                <a href="#first-call">First Sketch</a>
+                <a href="#first-call">The 20 minute call</a>
               </li>
               <li>
-                <a href="#audit">The Blueprint</a>
+                <a href="#audit">The Gain Audit</a>
               </li>
               <li>
                 <a href="#fitted">What we build</a>
@@ -36,8 +39,8 @@ export default function Footer() {
                 <a href="#how">How we work</a>
               </li>
               <li>
-                <a className="ext" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-                  Book your First Sketch
+                <a href="#apply">
+                  Book your 20 minute call
                 </a>
               </li>
             </ul>

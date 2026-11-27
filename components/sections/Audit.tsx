@@ -4,7 +4,7 @@ export default function Audit() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>03</b>The Blueprint
+            <b>04</b>The Gain Audit
           </div>
           <div>
             <h2 className="display">
@@ -14,15 +14,18 @@ export default function Audit() {
               <div className="lw-copy">
                 <div style={{ display: "grid", gap: "18px" }}>
                   <p className="lede">
-                    <b>We don't run on vibes. We run on blueprints.</b>
+                    <b>We don't guess at the gain. We measure it.</b>
                   </p>
                   <p className="lede">
-                    The Blueprint is our audit. It is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
+                    The Gain Audit is where we find out how the work really gets done. We sit with each team, watch the jobs that eat the week,
                     and measure them. You get a written report that says where the hours go, what each job costs you, and what we would
                     build to take it away.
                   </p>
                   <p className="lede">
-                    The report is yours whatever you decide. Ask us to build it and part of the Blueprint fee comes off the price. Or take
+                    It counts both sides of the gain: the hours your people get back, and the money the business can make with them.
+                  </p>
+                  <p className="lede">
+                    The report is yours whatever you decide. Ask us to build it and part of the Gain Audit fee comes off the price. Or take
                     the report and do it yourselves.
                   </p>
                 </div>
@@ -51,7 +54,7 @@ export default function Audit() {
                 </div>
                 <details className="fold" style={{ marginTop: "0" }}>
                   <summary>
-                    <span className="k">Everything the Blueprint covers</span>
+                    <span className="k">Everything the Gain Audit covers</span>
                     <span className="hint" />
                   </summary>
                   <div className="inner">
@@ -102,21 +105,20 @@ export default function Audit() {
                   </div>
                 </details>
               </div>
-              <aside className="price-card" aria-label="The Blueprint: how it is sized">
+              <aside className="price-card" aria-label="The Gain Audit: how it is sized">
                 <div className="mono">
-                  <b>How it is sized</b>The Blueprint
+                  <b>How it is sized</b>The Gain Audit
                 </div>
                 <div className="spec">
                   <div className="row">
                     <div className="mono">Size</div>
                     <p>
-                      Three to five days in the business, depending on how many teams there are to cover. We scope it with you on the First
-                      Sketch call.
+                      Three to five days in the business, depending on how many teams there are to cover. We scope it with you on the 20 minute call.
                     </p>
                   </div>
                   <div className="row">
                     <div className="mono">Price</div>
-                    <p>One fixed fee, agreed on the First Sketch call before anything starts.</p>
+                    <p>One fixed fee, sent to you within 48 hours of the call and agreed before anything starts.</p>
                   </div>
                   <div className="row">
                     <div className="mono">Credited</div>
@@ -128,12 +130,12 @@ export default function Audit() {
                   </div>
                 </div>
                 <div className="ctas">
-                  <a className="btn ac" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-                    Book your First Sketch
+                  <a className="btn ac" href="#apply">
+                    Book your 20 minute call
                   </a>
                 </div>
                 <p className="fine">
-                  Every Blueprint starts with the First Sketch, a free 30 minute call. That is where we agree which teams to cover and which size fits.
+                  Every Gain Audit starts with a free 20 minute call. That is where we agree which teams to cover and which size fits.
                 </p>
               </aside>
             </div>

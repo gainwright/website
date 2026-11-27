@@ -16,6 +16,10 @@ function line(v: unknown, max = 200): string {
 function text(v: unknown, max = 4000): string {
   return typeof v === "string" ? v.trim().slice(0, max) : "";
 }
+/** A list of short answers, joined on one line. */
+function list(v: unknown): string {
+  return Array.isArray(v) ? v.slice(0, 12).map((x) => line(x, 60)).filter(Boolean).join("; ") : "";
+}
 /**
  * One plain address and nothing else. Deliberately strict, because the scorecard sends mail to this
  * address: no commas, semicolons, brackets, quotes or spaces that a mail library could read as a
@@ -25,14 +29,8 @@ function isEmail(v: string): boolean {
   return v.length <= 254 && /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+$/.test(v);
 }
 
-const INTERESTS: Record<string, string> = {
-  call: "A First Sketch call",
-  audit: "The Blueprint",
-  fitted: "A custom build",
-  claude: "Claude set up for our business",
-};
-
-const BOOKING_URL = "https://calendly.com/gainwright/first-sketch";
+// Where visitors are sent to book: the seven questions on the site, which lead on to the calendar.
+const BOOKING_URL = "https://gainwright.ai/#apply";
 const REPLY_FROM = process.env.CONTACT_REPLY_FROM || "Gainwright <hello@gainwright.ai>";
 const REPLY_TO = process.env.CONTACT_REPLY_TO || "hello@gainwright.ai";
 
@@ -99,11 +97,11 @@ function scorecardReply(jobs: string[]): { subject: string; lines: string[] } {
     ? [`You ticked ${jobs.length} of 8. Here is what we would fit for each:`, "", ...jobs.map((j, i) => `${i + 1}. ${j}`)]
     : ["You ticked none of the eight, which means the business is already running tighter than most."];
   const next = jobs.length
-    ? "The next step is the First Sketch, a free 30 minute call. You walk us through one of these jobs and leave with a rough figure for what it costs you a year."
-    : "If there is a job that eats the week and was not on the list, the First Sketch is a free 30 minute call. You walk us through it and leave with a rough figure for what it costs you a year.";
+    ? "The next step is a free 20 minute call. You walk us through one of these jobs and leave with a rough figure for what it costs you a year."
+    : "If there is a job that eats the week and was not on the list, there is a free 20 minute call. You walk us through it and leave with a rough figure for what it costs you a year.";
   return {
     subject: "Your list: the jobs AI should already be doing for you",
-    lines: [...opening, "", next, "", `Book a time: ${BOOKING_URL}`, "", "Or just reply to this email.", "", "Don Demetrius", "Gainwright", "gainwright.ai"],
+    lines: [...opening, "", next, "", `Answer seven short questions and pick a time: ${BOOKING_URL}`, "", "Or just reply to this email.", "", "Don Demetrius", "Gainwright", "gainwright.ai"],
   };
 }
 
@@ -113,24 +111,28 @@ function compose(body: Fields): Mail | null {
   if (!isEmail(email)) return null;
 
   if (body.type === "call-request") {
-    const name = line(body.name), company = line(body.company);
-    if (!name || !company) return null;
-    const interest = line(body.interest);
+    const name = line(body.name), company = line(body.company), about = text(body.about, 1500);
+    if (!name || !company || !about) return null;
+    const time = list(body.time), timeOther = line(body.timeOther), systems = list(body.systems), systemsOther = line(body.systemsOther);
     return {
-      subject: `Call request: ${name}, ${company}`,
+      subject: `Call booking: ${name}, ${company}`,
       replyTo: email,
       lines: [
         `Name: ${name}`,
         `Email: ${email}`,
         `Business: ${company}`,
-        `Website: ${line(body.website) || "-"}`,
-        `Turnover: ${line(body.turnover) || "-"}`,
-        `Here for: ${INTERESTS[interest] || interest || "-"}`,
-        `Wants to start: ${line(body.when) || "-"}`,
-        `Heard about us: ${line(body.heard) || "-"}`,
         "",
-        "Where the hours go:",
-        text(body.hours) || "-",
+        "1. What the business does, and how many people:",
+        about,
+        "",
+        `2. Takes up time: ${time || "-"}${timeOther ? ` (something else: ${timeOther})` : ""}`,
+        `3. Would most like never to do again: ${line(body.never) || "-"}`,
+        `4. Hours a week on that job, everyone involved: ${line(body.week) || "-"}`,
+        `5. Tried already: ${list(body.tried) || "-"}`,
+        `6. Systems: ${systems || "-"}${systemsOther ? ` (other: ${systemsOther})` : ""}`,
+        `7. Budget this quarter: ${line(body.budget) || "-"}`,
+        "",
+        "They were sent on to the calendar to pick a time. If no booking follows, they answered but did not book.",
       ],
     };
   }

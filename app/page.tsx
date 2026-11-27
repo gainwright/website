@@ -17,13 +17,13 @@ export default function Page() {
       <Header />
       <main>
         <Hero />
+        <Studio />
         <Hours />
         <FirstCall />
         <Audit />
         <FittedWork />
         <Clients />
         <HowWeWork />
-        <Studio />
         <BookACall />
       </main>
       <Footer />

@@ -15,8 +15,8 @@ export default function Hero() {
               it into the systems you already run, set Claude up safely, and stay until your team runs it without us.
             </p>
             <div className="hero-ctas">
-              <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-                Book your First Sketch <span className="arr">→</span>
+              <a className="btn" href="#apply">
+                Book your 20 minute call <span className="arr">→</span>
               </a>{" "}
               <a className="ulink" href="#hours">
                 What the admin costs you

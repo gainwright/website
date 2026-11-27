@@ -4,16 +4,16 @@ export default function FirstCall() {
       <div className="wrap">
         <div className="section-head">
           <div className="mono">
-            <b>02</b>First Sketch · free
+            <b>03</b>The 20 minute call · free
           </div>
           <div>
             <h2 className="display">
-              Start with the First <span className="ac">Sketch</span>.
+              Start with a 20 minute <span className="ac">call</span>.
             </h2>
             <div className="firstcall">
               <div>
                 <p className="lede">
-                  A free 30 minute call, with no forms to fill in first. You walk us through how the work gets done today.
+                  A free 20 minute call. You answer seven short questions when you book, so the 20 minutes go on your business and not on introductions.
                 </p>
                 <ol className="stack cols" style={{ marginTop: "28px" }}>
                   <li>
@@ -27,7 +27,7 @@ export default function FirstCall() {
                     <div className="mono">02</div>
                     <div>
                       <h3>You leave with a figure</h3>
-                      <p>A rough cost for that job, in your own numbers, by the end of the call. That is the first sketch.</p>
+                      <p>A rough cost for that job, in your own numbers, by the end of the call.</p>
                     </div>
                   </li>
                   <li>
@@ -35,7 +35,7 @@ export default function FirstCall() {
                     <div>
                       <h3>If it is not worth it, we say so</h3>
                       <p>
-                        If we can't find a job costing you at least £20,000 a year, we'll tell you on the call and you'll have lost 30
+                        If we can't find a job costing you at least £20,000 a year, we'll tell you on the call and you'll have lost 20
                         minutes.
                       </p>
                     </div>
@@ -43,17 +43,17 @@ export default function FirstCall() {
                   <li>
                     <div className="mono">04</div>
                     <div>
-                      <h3>If it is, the Blueprint comes next</h3>
+                      <h3>If it is, the Gain Audit comes next</h3>
                       <p>
                         Our audit. We measure the work properly inside the business and come back with a written report and a fixed price
-                        to remove most of it. The Blueprint is a fixed fee, and part of it comes off the build if you go ahead.
+                        to remove most of it. The Gain Audit is a fixed fee, and part of it comes off the build if you go ahead.
                       </p>
                     </div>
                   </li>
                 </ol>
                 <div style={{ marginTop: "28px" }}>
-                  <a className="btn" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-                    Book your First Sketch <span className="arr">→</span>
+                  <a className="btn" href="#apply">
+                    Book your 20 minute call <span className="arr">→</span>
                   </a>
                 </div>
               </div>
@@ -180,8 +180,8 @@ export default function FirstCall() {
                   <p className="mono" id="scoreDone" hidden />
                   <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
                     Or skip the email and{" "}
-                    <a className="ulink" href="https://calendly.com/gainwright/first-sketch" target="_blank" rel="noopener">
-                      book your First Sketch
+                    <a className="ulink" href="#apply">
+                      book your 20 minute call
                     </a>
                     .
                   </p>
