@@ -203,7 +203,7 @@ export default function BookingForm() {
         <div className="verdict">Thank you. Now pick a time.</div>
         <p style={{ color: "var(--fg-soft)" }}>
           Your name and email are already filled in. If the calendar does not appear,{" "}
-          <a className="ulink" id="bookLink" href="https://calendly.com/temp-gainwright/20-minute-call" target="_blank" rel="noopener">
+          <a className="ulink" id="bookLink" href="https://calendly.com/gainwright/20-minute-call" target="_blank" rel="noopener">
             open it in a new tab
           </a>
           . Or email <span id="emailText2">hello@gainwright.ai</span>.
