@@ -309,7 +309,17 @@ p{margin:0}
 .field label.ask i{font-style:normal;color:var(--muted);font-weight:400;font-size:14.5px;white-space:nowrap}
 .field.askf{gap:16px;padding-top:30px;border-top:1px solid var(--border-soft)}
 .form:has(.askf){gap:30px}
-.form-err{color:var(--accent)}
+/* a missing answer: marked where it is, with what is missing */
+.form{--err:#c2362b}
+:root[data-theme="dark"] .form{--err:#ff9a8f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .form{--err:#ff9a8f}}
+.form-err{color:var(--err)}
+.f3{align-items:start}
+.f3 .field{align-content:start}
+.field-err{margin:0;font-size:14.5px;color:var(--err)}
+.field.bad label,.field.bad label.ask b{color:var(--err)}
+.field.bad input,.field.bad textarea{border-bottom-color:var(--err)}
+.field.bad .chips button{border-color:var(--err)}
 .form{scroll-margin-top:88px;background:var(--card);border:1px solid var(--border);padding:clamp(20px,2.6vw,36px);display:grid;gap:22px}
 .f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
 .field{display:grid;gap:8px;min-width:0}
