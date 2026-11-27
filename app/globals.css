@@ -431,7 +431,6 @@ p{margin:0}
 .voice blockquote p{font-size:clamp(17px,1.3vw,19px);line-height:1.5;color:var(--fg);max-width:46em}
 .voice figcaption{display:flex;align-items:center;gap:16px}
 .voice figcaption img{width:64px;height:64px;border-radius:50%;flex:none;border:1px solid var(--border)}
-.voice figcaption .initials{width:64px;height:64px;border-radius:50%;flex:none;border:1px solid var(--border);display:grid;place-items:center;font-family:var(--font-display);font-weight:540;font-size:20px;color:var(--accent)}
 .voice figcaption b{display:block;font-weight:540}
 .voice figcaption .mono{display:block;margin-top:4px}
 
