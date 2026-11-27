@@ -74,6 +74,32 @@ export default function Clients() {
                   </div>
                 </figcaption>
               </figure>
+              <figure className="voice">
+                <blockquote>
+                  <p>
+                    I run an installation business and we have to run lean. We were spending hours and hours planning jobs in Google Maps
+                    and tracking pricing in spreadsheets. Old, dated systems.
+                  </p>
+                  <p>
+                    Since working with Don and Gainwright, the scheduling tool feeds the billing and everything is systemised. I've been able
+                    to put someone with little planning or IT experience into a role I would otherwise pay £50,000 to £60,000 a year for.
+                  </p>
+                  <p>
+                    Once it's complete, it will save us about two full-time roles, around 80 hours a week. Long term, the savings are in the
+                    hundreds of thousands. People aren't designed for data input. This gives my team more time to connect and create.
+                  </p>
+                  <p>If you're not working with Gainwright, you need to have a word with yourself.</p>
+                </blockquote>
+                <figcaption>
+                  <span className="initials" aria-hidden="true">
+                    SR
+                  </span>
+                  <div>
+                    <b>Simon Roberts</b>
+                    <span className="mono">Installation business · scheduling, billing and CRM built to order</span>
+                  </div>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </div>
