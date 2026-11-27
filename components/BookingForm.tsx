@@ -63,32 +63,32 @@ export default function BookingForm() {
           <b>3</b>Of those, which one would you most like to never do again?
         </label>
         <div className="chips" role="group" aria-labelledby="lblNever" data-name="never">
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Bookkeeping and reconciliation
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Chasing invoices
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Quoting and proposals
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Inbox and customer replies
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Reports and month end
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Scheduling and admin
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" hidden>
             Data entry between systems
           </button>
-          <button type="button" aria-pressed="false" data-other="fNeverOther">
+          <button type="button" aria-pressed="false" hidden>
             Something else
           </button>
         </div>
-        <input id="fNeverOther" name="neverOther" type="text" placeholder="What is the something else?" aria-label="What is the something else?" hidden />
+        <p className="ask-note" id="neverHint">The ones you tick in question 2 appear here.</p>
       </div>
       <div className="field askf">
         <label className="ask" id="lblWeek">
@@ -188,6 +188,9 @@ export default function BookingForm() {
             Not yet, just exploring
           </button>
         </div>
+        <p className="ask-note">
+          There is no wrong answer. It only changes what we prepare: a proposal, a plan for later, or simply our best advice.
+        </p>
       </div>
       <div className="foot">
         <p>

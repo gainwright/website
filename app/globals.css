@@ -482,3 +482,6 @@ p{margin:0}
 .detail-btn{white-space:nowrap}
 /* eight nav links: drop the tag beside the logo and tighten the links until there is room for both */
 @media (max-width:1620px){.hdr .tag{display:none}.nav{gap:18px}}
+
+.chips button[hidden]{display:none}
+.ask-note{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted);max-width:44em}
