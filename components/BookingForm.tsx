@@ -24,7 +24,7 @@ export default function BookingForm() {
         <label className="ask" htmlFor="fAbout">
           <b>1</b>What does the business do, and roughly how many people work in it?
         </label>
-        <textarea id="fAbout" name="about" placeholder="We make and fit architectural glazing. Fourteen of us, four in the office." required />
+        <textarea id="fAbout" name="about" required />
       </div>
       <div className="field askf">
         <label className="ask" id="lblTime">
@@ -84,10 +84,11 @@ export default function BookingForm() {
           <button type="button" aria-pressed="false">
             Data entry between systems
           </button>
-          <button type="button" aria-pressed="false">
+          <button type="button" aria-pressed="false" data-other="fNeverOther">
             Something else
           </button>
         </div>
+        <input id="fNeverOther" name="neverOther" type="text" placeholder="What is the something else?" aria-label="What is the something else?" hidden />
       </div>
       <div className="field askf">
         <label className="ask" id="lblWeek">
@@ -131,7 +132,11 @@ export default function BookingForm() {
           <button type="button" aria-pressed="false">
             Built something in-house
           </button>
+          <button type="button" aria-pressed="false" data-other="fTriedOther">
+            Something else
+          </button>
         </div>
+        <input id="fTriedOther" name="triedOther" type="text" placeholder="What else have you tried?" aria-label="What else have you tried?" hidden />
       </div>
       <div className="field askf">
         <label className="ask" id="lblSys">

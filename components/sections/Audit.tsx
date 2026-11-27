@@ -130,7 +130,7 @@ export default function Audit() {
                   </div>
                 </div>
                 <div className="ctas">
-                  <a className="btn ac" href="#apply">
+                  <a className="btn ac" href="/book">
                     Book your 20 minute call
                   </a>
                 </div>

@@ -39,7 +39,7 @@ export default function Footer() {
                 <a href="#how">How we work</a>
               </li>
               <li>
-                <a href="#apply">
+                <a href="/book">
                   Book your 20 minute call
                 </a>
               </li>

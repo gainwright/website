@@ -15,7 +15,7 @@ export default function Hero() {
               it into the systems you already run, set Claude up safely, and stay until your team runs it without us.
             </p>
             <div className="hero-ctas">
-              <a className="btn" href="#apply">
+              <a className="btn" href="/book">
                 Book your 20 minute call <span className="arr">→</span>
               </a>{" "}
               <a className="ulink" href="#hours">

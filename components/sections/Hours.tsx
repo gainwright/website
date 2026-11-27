@@ -100,7 +100,7 @@ export default function Hours() {
                   invoices chased on time, or what a person does with the weeks they get back. The 20 minute call puts a rough figure on
                   it in your own numbers, and the Gain Audit measures it properly.
                 </p>
-                <a className="btn" href="#apply" style={{ justifyContent: "center" }}>
+                <a className="btn" href="/book" style={{ justifyContent: "center" }}>
                   Book your 20 minute call <span className="arr">→</span>
                 </a>
               </div>
