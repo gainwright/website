@@ -486,5 +486,4 @@ p{margin:0}
 .chips button[hidden]{display:none}
 .ask-note{margin:0;font-size:14.5px;line-height:1.5;color:var(--muted);max-width:44em}
 
-.book-intro{margin-top:24px;display:grid;gap:14px;max-width:46em;padding:clamp(18px,2vw,26px) clamp(18px,2.2vw,30px);background:var(--card);border:1px solid var(--border);border-radius:var(--r-card)}
-.book-intro .lede{max-width:none}
+.book-intro{margin-top:24px;display:grid;gap:14px}
