@@ -28,7 +28,7 @@ export default function BookingForm() {
       </div>
       <div className="field askf">
         <label className="ask" id="lblTime">
-          <b>2</b>Which of these take up time in the business that you wish they didn't? <i>Tick all that apply.</i>
+          <b>2</b>Which of these take up time in your business that you wish they didn't? <i>Tick all that apply.</i>
         </label>
         <div className="chips" role="group" aria-labelledby="lblTime" data-name="time" data-multi="true">
           <button type="button" aria-pressed="false">

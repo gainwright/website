@@ -14,6 +14,49 @@ export default function Clients() {
               <figure className="voice">
                 <blockquote>
                   <p>
+                    I run an installation business and we have to run lean, so we need things automated. We were spending hours and hours
+                    planning jobs in Google Maps and tracking pricing in spreadsheets. Old, dated systems.
+                  </p>
+                  <p>
+                    Since working with Don and Gainwright, everything has been optimised. The scheduling tool feeds the billing, which gives
+                    us all the outputs we need and systemises everything really nicely. I've been able to put someone with little planning or
+                    IT experience into a role I would otherwise pay £50,000 to £60,000 a year for. We can put real culture-first doers into
+                    positions they could not have held before.
+                  </p>
+                  <p>
+                    Once it's complete, it will save us about two full-time roles, around 80 hours a week. Long term, the savings are in the
+                    hundreds of thousands. It also gives me the confidence to build a team, because I'm not relying on one very specific
+                    skill set to get things done.
+                  </p>
+                  <p>
+                    People aren't designed for data input. They're designed to talk, to connect and to create, and this gives my team more
+                    time for that. It's been a game changer.
+                  </p>
+                  <p>
+                    If you're not working with Gainwright, you need to have a word with yourself. If we're not building the foundations for
+                    an AI-first future now, we're going to get left behind.
+                  </p>
+                </blockquote>
+                <figcaption>
+                  <img src="/images/simon-roberts.jpg" alt="Simon Roberts" width="480" height="480" />
+                  <div>
+                    <b>
+                      <a href="https://www.linkedin.com/in/simon-roberts-794031322/" target="_blank" rel="noopener">
+                        Simon Roberts
+                      </a>
+                    </b>
+                    <span className="mono">
+                      <a href="https://vogueworktops.co.uk" target="_blank" rel="noopener">
+                        Vogue Worktops Ltd
+                      </a>{" "}
+                      · scheduling, billing and CRM built to order
+                    </span>
+                  </div>
+                </figcaption>
+              </figure>
+              <figure className="voice">
+                <blockquote>
+                  <p>
                     I pay for Claude, but no time to understand or utilise its capabilities whilst involved in fulfilment. I knew it was
                     costing me. Every proposal would take me at least a day to create.
                   </p>
