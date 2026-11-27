@@ -52,7 +52,7 @@ export default function FirstCall() {
                   </li>
                 </ol>
                 <div style={{ marginTop: "28px" }}>
-                  <a className="btn" href="#apply">
+                  <a className="btn" href="/book">
                     Book your 20 minute call <span className="arr">→</span>
                   </a>
                 </div>
@@ -180,7 +180,7 @@ export default function FirstCall() {
                   <p className="mono" id="scoreDone" hidden />
                   <p id="scoreApply" hidden style={{ fontSize: "15px", color: "var(--fg-soft)" }}>
                     Or skip the email and{" "}
-                    <a className="ulink" href="#apply">
+                    <a className="ulink" href="/book">
                       book your 20 minute call
                     </a>
                     .

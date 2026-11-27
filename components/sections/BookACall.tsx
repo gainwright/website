@@ -1,5 +1,3 @@
-import BookingForm from "@/components/BookingForm";
-
 export default function BookACall() {
   return (
     <section className="section contact" id="apply">
@@ -15,7 +13,7 @@ export default function BookACall() {
             <div className="contact-top">
               <div className="contact-side">
                 <p className="lede">
-                  The way in is a free 20 minute call. Answer seven short questions below, then pick a time. It takes about two minutes.
+                  The way in is a free 20 minute call. Answer seven short questions, then pick a time. It takes about two minutes.
                 </p>
                 <ol className="steps">
                   <li>
@@ -33,8 +31,8 @@ export default function BookACall() {
                 <div className="mono">
                   <b>Free</b>20 minutes · video call
                 </div>
-                <a className="btn ac" href="#applyForm">
-                  Start the seven questions <span className="arr">↓</span>
+                <a className="btn ac" href="/book">
+                  Start the seven questions <span className="arr">→</span>
                 </a>
                 <div className="spec">
                   <div className="row">
@@ -49,7 +47,6 @@ export default function BookACall() {
                 </div>
               </aside>
             </div>
-            <BookingForm />
           </div>
         </div>
       </div>

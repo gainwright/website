@@ -212,7 +212,7 @@ export default function FittedWork() {
               <p className="mono src" style={{ margin: "0" }}>
                 Examples, not a menu. Every job is one fixed price, quoted in the Gain Audit report, with ninety days of support.
               </p>
-              <a className="btn" href="#apply" data-intent="fitted">
+              <a className="btn" href="/book" data-intent="fitted">
                 Ask about a build <span className="arr">→</span>
               </a>
             </div>
