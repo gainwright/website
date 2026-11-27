@@ -339,8 +339,9 @@ p{margin:0}
 .form .foot p{color:var(--muted);font-size:13.5px;max-width:30em}
 .form .done{display:grid;gap:10px;padding:16px 0}
 /* the Calendly calendar, shown in the page once the questions are answered */
-.book-cal{margin-top:14px;border:1px solid var(--border);background:#fff}
-.book-cal iframe{display:block;width:100%;height:720px;border:0}
+.book-cal{margin-top:14px;border-top:1px solid var(--border-soft);background:var(--card)}
+/* color-scheme:light keeps the frame see-through on the dark theme, so the card behind shows */
+.book-cal iframe{display:block;width:100%;height:720px;border:0;color-scheme:light}
 .form .done{scroll-margin-top:24px}
 .form .done .verdict{font-family:var(--font-display);font-weight:540;font-size:26px;letter-spacing:-.035em;line-height:1.1}
 .contact-side{display:grid;gap:28px}
