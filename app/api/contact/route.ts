@@ -29,8 +29,8 @@ function isEmail(v: string): boolean {
   return v.length <= 254 && /^[A-Za-z0-9.!#$%&'*+/=?^_`{|}~-]+@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)+$/.test(v);
 }
 
-// Where visitors are sent to book: the seven questions on the site, which lead on to the calendar.
-const BOOKING_URL = "https://gainwright.ai/#apply";
+// Where visitors are sent to book: the seven questions on their own page, which lead on to the calendar.
+const BOOKING_URL = "https://gainwright.ai/book";
 const REPLY_FROM = process.env.CONTACT_REPLY_FROM || "Gainwright <hello@gainwright.ai>";
 const REPLY_TO = process.env.CONTACT_REPLY_TO || "hello@gainwright.ai";
 
