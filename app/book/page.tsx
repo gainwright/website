@@ -31,11 +31,11 @@ export default function Book() {
                 </p>
                 <p className="lede">
                   By the time we speak we have read your answers and looked at the systems you use, so the 20 minutes go on the
-                  jobs that are eating into your week and what each one is worth.
+                  one job you most want off your plate.
                 </p>
                 <p className="lede">
-                  You leave with a shortlist of the three jobs most worth fixing, in order, and a straight answer on whether it is
-                  worth going any further.
+                  You leave with a rough figure for what that job is costing you each year, and a straight answer on whether it
+                  is worth going any further.
                 </p>
               </div>
               <BookingForm />
